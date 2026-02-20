@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <update version="0.2.1">
+            <file name="kibblestasty.index" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer.index" />
+        </update>
+    </info>
+    <files>
+        <file name="source.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/source.xml" />
+        <file name="class-wyrmslayer.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/class-wyrmslayer.xml" />
+    </files>
+</index>

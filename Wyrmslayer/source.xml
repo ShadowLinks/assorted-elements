@@ -1,0 +1,42 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/source.xml" />
+        </update>
+    </info>
+    <element name="The Wyrmslayer" type="Source" source="PW-WS" id="ID_PW_SOURCE_WYRMSLAYER">
+        <description>
+            <h5 style="margin-top:-1em">______</h5>
+            <p><strong>Ever wanted to play a cool dragon slayer who leaps into the sky, decimating giant monsters in the blink of an eye? Jump into the heavens and defeat dragons with style, with Power Word's first official class for 5E, The Wyrmslayer.</strong></p>
+            <p>Included in this package:</p>
+            <ul>
+                <li>Full original class expansion for 5E</li>
+                <li>Three epic subclasses - Sky Splitter, Toll Sentinel and Death Singer</li>
+                <li>Over 20 unique Wyrmslayer weapons</li>
+                <li>2 New Lineages</li>
+                <li>4 Thematic Feats</li>
+            </ul>
+            <p>Explore unique combat styles by playing as one of three tactical subclasses.</p>
+            <p>Sky Splitter - An acrobatic aerial focused diver who's immune to fall damage and defeats opponents by leaping from cliffs and meteor diving into the ground. Cling to giant creatures and fight them up close and personal, after falling 300ft...</p>
+            <p>Death Singer - A precision focused damage dealer who kites enemies and aims for the heart. Wield powerful ranged weapons with unique positional mechanics. Bring down giant foes in style with high damage critical strikes and armour shredding limb targeting. </p>
+            <p>Toll Sentinel - A massive heavy armoured defender who excels at protecting their allies and reducing the damage they take. Control the battefield by shoving enemies into where YOU want them. Put yourself in front of the boss and take a stand.</p>
+            <p class="indent">Wield over 20 Wyrmslayer themed weapons and utilise their powerful fusion mechanic, allowing you to merge them with your magical tools and weapons to create the ultimate damage dealer. </p>
+        </description>
+        <setters>
+            <set name="abbreviation">PW</set>
+            <set name="url">https://www.powerwordtabletop.com/product-page/the-wyrmslayer</set>
+            <set name="image">https://static.wixstatic.com/media/54d02d_195a92b117024c69a7c705e82a9f4516~mv2.png/v1/fill/w_623,h_883,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/54d02d_195a92b117024c69a7c705e82a9f4516~mv2.png</set>
+            <set name="author" abbreviation="Power Word" url="https://www.powerwordtabletop.com/">Power Word</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">false</set>
+            <set name="league">false</set>
+            <set name="release">10250331</set>
+        </setters>
+    </element>
+</elements>
