@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
@@ -9,7 +8,7 @@
     </info>
     <element name="The Wyrmslayer" type="Source" source="PW-WS" id="ID_PW_SOURCE_WYRMSLAYER">
         <description>
-            <h5 style="margin-top:-1em">______</h5>
+            <h5 style="margin-top:-1em">The Wyrmslayer Class</h5>
             <p><strong>Ever wanted to play a cool dragon slayer who leaps into the sky, decimating giant monsters in the blink of an eye? Jump into the heavens and defeat dragons with style, with Power Word's first official class for 5E, The Wyrmslayer.</strong></p>
             <p>Included in this package:</p>
             <ul>
