@@ -8,72 +8,343 @@
     </info>
     <element name="Wyrmslayer" type="Class" source="The Wyrmslayer" id="ID_PW_WS_CLASS_WYRMSLAYER">
         <description>
-    <p></p>
-    <h4>_______________</h4>
-    <p></p>
-    <p class="indent"></p>
-    <h4>_______________</h4>
-    <p></p>
-    <p class="indent"></p>
-    <h4>CREATING A lowercaseclassname</h4>
-    <p></p>
-    <h5 class="caption">QUICK BUILD</h5>
-    <p></p>
-    <h2>CLASS FEATURES</h2>
-    <p>As an lowercaseclassname, you gain the following class features.</p>
-    <h5 class="caption">HIT POINTS</h5>
-    <ul class="unstyled">
-        <li><strong>Hit Dice:</strong> 1d8 per lowercaseclassname level</li>
-        <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
-        <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per lowercaseclassname level after 1st</li>
-    </ul>
-    <h5 class="caption">PROFICIENCIES</h5>
-    <ul class="unstyled mb">
-        <li><strong>Armor:</strong> </li>
-        <li><strong>Weapons:</strong> </li>
-        <li><strong>Tools:</strong> </li>
-    </ul>
-    <ul class="unstyled">
-        <li><strong>Saving Throws:</strong> </li>
-        <li><strong>Skills:</strong> </li>
-    </ul>
-    <h5 class="caption">EQUIPMENT</h5>
-    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-        <!-- class table here -->
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
-            <div element="ID____" />
+            <p>Ever wanted to play a cool dragon slayer who leaps into the sky, decimating giant monsters in the blink of an eye? If so, the Wyrmslayer is for you. Sink your jaws into this package and build yourself a character that makes the others at the table relieved to have you on their side. </p>
+            <p class="indent">Injected by their hateful doctrine, Wyrmslayers are taught to point their physical and emotional power towards their most despised mortal enemy, dragonkind. Raised in resolute dogma, the ultimate goal of a Wyrmslayer is to complete a ritual known as The Sundering. This sacred text has been passed down from generation to generation as a well guarded secret and it is the premise on which this powerful faction rides.</p>
+            <h4>THE PLEDGE OF A SLAYER</h4>
+            <p>Consume the essence of all that dragonkind offers and wield their elemental power against them. Raise the Exsanguinator's Spear at the peak of the great mountain and tear the sky aflame.</p>
+            <p class="indent">We will rend their wings.  Our Terror will be theirs.  The Sundering Sings.  The Wyrmslayer's prayers</p>
+            <h4>ROLEPLAYING A WYRMSLAYER</h4>
+            <p>Below you will find some recommended ideas to help you get into the swing of what playing a wyrmslayer should be and feel like. Wyrmslayer's are combat focused. Dragons are a wyrmslayer's mortal enemy so flying is considered taboo. Instead, wyrmslayers rely on their signature leap, allowing them to combat aerial opponents whilst representing the constraints of mortalkind. </p>
+            <p class="indent">You rely on your powerful mobility to control the battlefield, leaping from creature to creature and keeping the enemy off balance. You often seek out the largest foe possible, whether to protect your allies from them or to take them down yourself. You rely on your unique ability to immediately reposition and create new angles and advantages through creative movement.</p>
+            <p class="indent">You study the habitats of dangerous creatures, constantly assessing vantage points and finding ways to utilise the environment to your advantage. You seek out powerful relics that will assist in your ability to defeat powerful foes, particularly weapons to fuse with your wyrmslayer arsenal. </p>
+            <h4>CREATING A WYRMSLAYERR</h4>
+            <p>To create a wyrmslayer, consult the following subsections which give you hit points, proficiencies and starting equipment. Then look at the table to see the features you gain at each level. The descriptions of those features appear in the "Class Features" section. </p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a wyrmslayer quickly by following these suggestions. First, put your highest ability in Strength (if you want to focus on certain melee weapons) or Dexterity (if you want to focus on certain ranged or finesse weapons. Your second highest ability score should be Constitution and your third should be either Dexterity or Strength, depending on which stat you made your highest. Next, choose a background that gives proficiency in skills such as Athletics, Aerobatics, Perception, Survival or Medicine. </p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an wyrmslayer, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d8 per wyrmslayer level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per wyrmslayer level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light Armour, Medium Armour </li>
+                <li><strong>Weapons:</strong> Simple Weapons, Martial Weapons </li>
+                <li><strong>Tools:</strong> None</li>
+                <li><strong>Languages:</strong> Draconic</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+                <li><strong>Skills:</strong> Choose three from Acrobatics, Athletics, Perception, Survival, Stealth and Insight</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) two martial weapons, (b) one martial weapon and simple weapon or (c) one wyrmslayer weapon. </li>
+                <li>(a) chain shirt or (b) leather armour, a longbow, and 20 arrows </li>
+                <li>(a) dungeoneer's pack or (b) an adventurer's pack</li>
+                <li>Alternatively, you can forgo this starting equipment and the equipment granted by your background, instead starting with Sd4 x 10 gp. </li>
+            </ul>
+            <h5 class="caption">THE WYRMSLAYER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="col-10">Proficiency</td><td class="col-10">Leap Distance</td><td class="col-10">Leap Damage</td><td class="col-60 left">Features</td></tr>
+                </thead>
+                <tr><td> 1st</td><td>2</td><td>-</td><td>-</td><td class="left">Dragonslayer's Arsenal, Draconic Resilience</td></tr>
+                <tr><td> 2nd</td><td>2</td><td>20ft</td><td>d4</td><td class="left">Enhanced Leap, Leap Strike, Fighting Style</td></tr>
+                <tr><td> 3rd</td><td>2</td><td>20ft</td><td>d4</td><td class="left">Wyrmslayer Pledge</td></tr>
+                <tr><td> 4th</td><td>2</td><td>25ft</td><td>d4</td><td class="left">ASI</td></tr>
+                <tr><td> 5th</td><td>3</td><td>25ft</td><td>d6</td><td class="left">Extra Attack </td></tr>
+                <tr><td> 6th</td><td>3</td><td>30ft</td><td>d6</td><td class="left">Draconic Power </td></tr>
+                <tr><td> 7th</td><td>3</td><td>30ft</td><td>d6</td><td class="left">Wyrmslayer Pledge Feature </td></tr>
+                <tr><td> 8th</td><td>3</td><td>35ft</td><td>d6</td><td class="left">ASI</td></tr>
+                <tr><td> 9th</td><td>4</td><td>35ft</td><td>d8</td><td class="left">Cataclysmic Impact </td></tr>
+                <tr><td>10th</td><td>4</td><td>40ft</td><td>d8</td><td class="left">Wyrmslayer Pledge Feature</td></tr>
+                <tr><td>11th</td><td>4</td><td>40ft</td><td>d8</td><td class="left">Mortal Enemy </td></tr>
+                <tr><td>12th</td><td>4</td><td>45ft</td><td>d8</td><td class="left">ASI</td></tr>
+                <tr><td>13th</td><td>5</td><td>45ft</td><td>d10</td><td class="left">Twin Leap Strike </td></tr>
+                <tr><td>14th</td><td>5</td><td>50ft</td><td>d10</td><td class="left">Draconic Mastery </td></tr>
+                <tr><td>15th</td><td>5</td><td>50ft</td><td>d10</td><td class="left">Wyrmslayer Pledge Feature </td></tr>
+                <tr><td>16th</td><td>5</td><td>55ft</td><td>d10</td><td class="left">ASI</td></tr>
+                <tr><td>17th</td><td>6</td><td>55ft</td><td>d12</td><td class="left">Mortal Doom </td></tr>
+                <tr><td>18th</td><td>6</td><td>60ft</td><td>d12</td><td class="left">Wyrmslayer Pledge Feature </td></tr>
+                <tr><td>19th</td><td>6</td><td>60ft</td><td>d12</td><td class="left">ASI</td></tr>
+                <tr><td>20th</td><td>6</td><td>60ft</td><td>d12</td><td class="left">Master of the Wyrm </td></tr>
+            </table>
+            <p>Some features require a save and the DC is equal to 8 + proficiency + Constitution modifier.</p>
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRAGONSLAYERS_ARSENAL" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ENHANCED_LEAP" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_LEAP_STRIKE" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_FIGHTING_STYLE" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_WYRMSLAYER_PLEDGE" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASI" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_EXTRA_ATTACK" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_POWER" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_CATACLYSMIC_IMPACT" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_ENEMY" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_TWIN_LEAP_STRIKE" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_DOOM" />
+            <div element="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASPECT_OF_THE_DRAGON" />
         </description>
         <setters>
-            <set name="hd">d4</set>
+            <set name="hd">d8</set>
         </setters>
+        <sheet>
+            <description>Your DC for Wyrmslayer features is {{wyrmslayer:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="wyrmslayer:dc" value="8" bonuys="base"/>
+            <stat name="wyrmslayer:dc" value="proficiency" />
+            <stat name="wyrmslayer:dc" value="constitution:modifier" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRAGONSLAYERS_ARSENAL" level="1" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE" level="1" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ENHANCED_LEAP" level="2" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_LEAP_STRIKE" level="2" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_FIGHTING_STYLE" level="2" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_WYRMSLAYER_PLEDGE" level="3" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASI" level="4" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_POWER" level="6" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_CATACLYSMIC_IMPACT" level="9" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_ENEMY" level="11" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_TWIN_LEAP_STRIKE" level="13" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY" level="14" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_DOOM" level="17" />
+            <grant type="Class Feature" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASPECT_OF_THE_DRAGON" level="20" />
+        </rules>
+    </element>
+    <element name="Dragonslayer's Arsenal" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRAGONSLAYERS_ARSENAL">
+        <description>
+            <p>Specialising in a unique methods of hunting dragons, the legendary smith work of the Wyrmslayer Conclave grants you access to a powerful arsenal of dragon hunting weapons. Choose a weapon from the list below and become proficient with it. You gain an additional weapon proficiency level 10. These weapon's do not fall under the simple or martial category and require special Wyrmslayer training to wield, meaning non wyrmslayer characters cannot use them effectively. Wyrmslayer weapons can fuse with and absorb the powers of other magical weapons of their corresponding type, as shown below in the list.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damge Die</td><td>Properties</td><td>Abilities</td><td>Possible Infusions</td></tr>
+                </thead>
+                <tr><td>Greatspear</td><td>1d10 piercing</td><td>two handed</td><td>Crit on 19 or 20</td><td>longswords, greatswords</td></tr>
+                <tr><td>Basilisk Blade</td><td>3d4 slashing</td><td>two handed, siege</td><td>Deals extra d6 vs Huge or larger monsters</td><td>Hammers, mauls, warpicks</td></tr>
+                <tr><td>Titan Slab</td><td>3d4 bludgeoning</td><td>two handed,finesse, siege</td><td>1d4 on enemies beside target on hit</td><td>fist weapons</td></tr>
+                <tr><td>Wyvern Fists</td><td>2d4 bludgeoning</td><td>two handed</td><td>When attacking, can use a bonus attack</td><td>lances</td></tr>
+                <tr><td>Telescopic Twinlances</td><td>1d12 piercing</td><td>finesse, reach</td><td>melee attacks on creatures within 15ft with no penalties. 2d4 beyond 10ft. No unmounted penalty.</td><td>Whips, flails</td></tr>
+                <tr><td>Scream Spine</td><td>1d6 slashing</td><td>two handed, special (Range 20/40)</td><td>Can grapple enemy on hit. 1d4 extra slashing when hit by melee attacks while grappled</td><td>staffs, nets</td></tr>
+                <tr><td>Dragon Rod</td><td>1d8 blugeoning using pole or 1d6 using line</td><td>light, thrown (20/60), finesse, returning</td><td>pole is melee, line is ranged. Line can grapple on hit and pull as bonus action 10ft toward you. You can extend the line to 60 ft, but unhooks beyond that. No size limits on grapple, but pull is limited to 4 feet if they are more than 1 size larger than you.</td><td>daggers, darts</td></tr>
+                <tr><td>Wyrm Quills</td><td>1d8 piercing</td><td>reach,finesse</td><td>Prevents regaining hit points on hit until end of their next turn</td><td>polearms</td></tr>
+            </table>
+            <p class="indent">When a Wyrmslayer weapon absorbs another weapon, it gains the magical properties, effects, bonuses and powers of the weapon it merges with, including any curses. Whilst in this form, the Wyrmslayer weapon retains its own abilities and traits, such as light, thrown or finesse. It also retains it's base damage die, unless the absorbed weapon contains a property to increase it. Wyrmslayer weapons can only merge with a weapon that matches their category. For example, a Greatspear cannot absorb the properties of a magical sword or axe and instead, must inherit the powers of a polearm.</p>
+            <p class="indent">A Wyrmslayer weapon can only have one fusion at any given time. You can remove the fusion component and return both weapons to their original form whenever you please. Fusing a weapon requires 10 minutes and removing a weapon takes 1 minute. If the fused weapon requires attunement, you must follow the s tandard attunement rules after fusing to wield the weapon effectively. The weapon's appearance changes to create an amalgamation of its original look and that of its component.</p>
+        </description>
+        <sheet>
+            <description>These weapon's do not fall under the simple or martial category and require special Wyrmslayer training to wield, meaning non wyrmslayer characters cannot use them effectively. Wyrmslayer weapons can fuse with and absorb the powers of other magical weapons of their corresponding type.
+            You can infuse your weapon with a compatible weapon and it gains the magical properties, effects, bonuses, and any powers of the weapon it merges with, including curses and attunement requirements. Fusing takes 10 minutes and removing takes 1 minute.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Dragonslayer's Arsenal" supports="dragonslayers-arsenal" level="1" />
+            <select type="Proficiency" name="Dragonslayer's Arsenal 2" supports="dragonslayers-arsenal" level="10" />
+        </rules>
+    </element>
+
+    <element name="Draconic Resilience" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE">
+        <description>
+            <p>At first level, your innate draconic powers are unleashed and you've learned to specialise in one of the chromatic elements. Choose an element between Fire, Cold, Lightning, Acid or Poison and gain resistance to that element. In addition, when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Draconic Resilience" supports="draconic-resilience" />
+        </rules>
+    </element>
+    <element name="Draconic Resilience (Fire)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE_FIRE">
+        <supports>draconic-resilience</supports>
+        <description>
+            <p>You are resistant to fire.</p>
+        </description>
+        <sheet>
+            <description>when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Draconic Resilience (Cold)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE_COLD">
+        <supports>draconic-resilience</supports>
+        <description>
+            <p>You are resistant to cold.</p>
+        </description>
+        <sheet>
+            <description>when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Draconic Resilience (Lightning)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE_LIGHTNING">
+        <supports>draconic-resilience</supports>
+        <description>
+            <p>You are resistant to lightning.</p>
+        </description>
+        <sheet>
+            <description>when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Draconic Resilience (Acid)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE_ACID">
+        <supports>draconic-resilience</supports>
+        <description>
+            <p>You are resistant to acid.</p>
+        </description>
+        <sheet>
+            <description>when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Draconic Resilience (Poison)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_RESILIENCE_POISON">
+        <supports>draconic-resilience</supports>
+        <description>
+            <p>You are resistant to poison.</p>
+        </description>
+        <sheet>
+            <description>when you slay a powerful dragon (GM's discretion), you can absorb its essence, adding its corresponding element to your resilience pool. You can only have one of these resistances active at a time with this feature and can switch between your existing choices during a short or long rest. Your GM may also allow you alternate ways to collect these elements, based on your campaign setting.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    
+    <element name="Enhanced Leap" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ENHANCED_LEAP">
+        <description>
+            <p>Your draconic power manifests in its most iconic form, surging your body with enhanced physical capabilities. At second level, on each of your turns, you can leap a distance of 20ft as part of your movement. The leap does not require an action, however it always uses half of your total movement and can only be used once per turn. When leaping from difficult terrain your leap distance is halved. If you are unable to move, you are unable to use this feature. The distance of your enhanced leap increases as you gain levels in this class, as shown on the Wyrmslayer class table. You do not take damage whilst falling from your enhanced leap distance.</p>
+        </description>
+        <sheet>
+            <description>On each of your turns, you can leap a distance of {{enhanced-leap:distance}}ft as part of your movement. The leap does not require an action, however it always uses half of your total movement and can only be used once per turn. When leaping from difficult terrain your leap distance is halved. If you are unable to move, you are unable to use this feature.You do not take damage whilst falling from your enhanced leap distance.</description>
+        </sheet>
+        <rules>
+            <stat name="enhanced-leap:distance" value="20" bonus="base" />
+            <stat name="enhanced-leap:distance" value="5" level="4" />
+            <stat name="enhanced-leap:distance" value="5" level="6" />
+            <stat name="enhanced-leap:distance" value="5" level="8" />
+            <stat name="enhanced-leap:distance" value="5" level="10" />
+            <stat name="enhanced-leap:distance" value="5" level="12" />
+            <stat name="enhanced-leap:distance" value="5" level="14" />
+            <stat name="enhanced-leap:distance" value="5" level="16" />
+            <stat name="enhanced-leap:distance" value="5" level="18" />
+        </rules>
+    </element>
+    <element name="Leap Strike" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_LEAP_STRIKE">
+        <description>
+            <p>At second level, when you take the Attack action, you can incorporate it with your Enhanced Leap. Choose a creature within your leaping distance leap towards them, making a melee weapon attack in the process.</p>
+            <p class="indent">This attack deals bonus damage and allows you to reposition yourself anywhere within 5ft of the target as part of your landing whether it hits or not. Note that you cannot use Leap Strike if you have already used your enhanced leap for movement. The amount of extra damage increases as you gain levels in this class, as shown in the Leap Damage column of the wyrmslayer class table.</p>
+        </description>
+        <sheet>
+            <description>When you take the Attack action, you can incorporate it with your Enhanced Leap. Choose a creature within your leaping distance leap towards them, making a melee weapon attack in the process.
+            This attack deals 1d{{leap-strike:damage}} bonus damage and allows you to reposition yourself anywhere within 5ft of the target as part of your landing whether it hits or not. Note that you cannot use Leap Strike if you have already used your enhanced leap for movement.</description>
+        </sheet>
+        <rules>
+            <stat name="leap-strike:damage" value="4" bonus="base" />
+            <stat name="leap-strike:damage" value="2" level="5" />
+            <stat name="leap-strike:damage" value="2" level="9" />
+            <stat name="leap-strike:damage" value="2" level="13" />
+            <stat name="leap-strike:damage" value="2" level="18" />
+        </rules>
+    </element>
+    <element name="Fighting Style" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_FIGHTING_STYLE">
+        <description>
+            <p>At second level, you adopt a style of fighting as your specialty. Choose one of the fighting style options (see core rules). You can't take a Fighting Style option more than once, even if you later get to choose again. You can choose an extra fighting style when you reach 10th level.</p>
+        </description>
         <sheet display="false" />
         <rules>
-            
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
-            <grant type="Class Feature" id="ID____" level="level" />
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style" />
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="10" />
         </rules>
+    </element>
+    <element name="Wyrmslayer Pledge" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_WYRMSLAYER_PLEDGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASI">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Extra Attack" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_EXTRA_ATTACK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Draconic Power" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_POWER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Cataclysmic Impact" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_CATACLYSMIC_IMPACT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mortal Enemy" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_ENEMY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Twin Leap Strike" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_TWIN_LEAP_STRIKE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Draconic Mastery" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Mortal Doom" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_DOOM">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Aspect of the Dragon" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASPECT_OF_THE_DRAGON">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
     </element>
     
     
