@@ -126,14 +126,14 @@
                 <thead>
                     <tr><td>Weapon</td><td>Damge Die</td><td>Properties</td><td>Abilities</td><td>Possible Infusions</td></tr>
                 </thead>
-                <tr><td>Greatspear</td><td>1d10 piercing</td><td>two handed</td><td>Crit on 19 or 20</td><td>longswords, greatswords</td></tr>
-                <tr><td>Basilisk Blade</td><td>3d4 slashing</td><td>two handed, siege</td><td>Deals extra d6 vs Huge or larger monsters</td><td>Hammers, mauls, warpicks</td></tr>
-                <tr><td>Titan Slab</td><td>3d4 bludgeoning</td><td>two handed,finesse, siege</td><td>1d4 on enemies beside target on hit</td><td>fist weapons</td></tr>
-                <tr><td>Wyvern Fists</td><td>2d4 bludgeoning</td><td>two handed</td><td>When attacking, can use a bonus attack</td><td>lances</td></tr>
-                <tr><td>Telescopic Twinlances</td><td>1d12 piercing</td><td>finesse, reach</td><td>melee attacks on creatures within 15ft with no penalties. 2d4 beyond 10ft. No unmounted penalty.</td><td>Whips, flails</td></tr>
-                <tr><td>Scream Spine</td><td>1d6 slashing</td><td>two handed, special (Range 20/40)</td><td>Can grapple enemy on hit. 1d4 extra slashing when hit by melee attacks while grappled</td><td>staffs, nets</td></tr>
-                <tr><td>Dragon Rod</td><td>1d8 blugeoning using pole or 1d6 using line</td><td>light, thrown (20/60), finesse, returning</td><td>pole is melee, line is ranged. Line can grapple on hit and pull as bonus action 10ft toward you. You can extend the line to 60 ft, but unhooks beyond that. No size limits on grapple, but pull is limited to 4 feet if they are more than 1 size larger than you.</td><td>daggers, darts</td></tr>
-                <tr><td>Wyrm Quills</td><td>1d8 piercing</td><td>reach,finesse</td><td>Prevents regaining hit points on hit until end of their next turn</td><td>polearms</td></tr>
+                <tr><td>Greatspear</td><td>1d10 piercing</td><td>two handed</td><td>Crit on 19 or 20</td><td>polearms</td></tr>
+                <tr><td>Basilisk Blade</td><td>3d4 slashing</td><td>two handed, siege</td><td>Deals extra d6 vs Huge or larger monsters</td><td>longswords, greatswords</td></tr>
+                <tr><td>Titan Slab</td><td>3d4 bludgeoning</td><td>two handed,finesse, siege</td><td>1d4 on enemies beside target on hit</td><td>Hammers, mauls, warpicks</td></tr>
+                <tr><td>Wyvern Fists</td><td>2d4 bludgeoning</td><td>two handed</td><td>When attacking, can use a bonus attack</td><td>fist weapons</td></tr>
+                <tr><td>Telescopic Twinlances</td><td>1d12 piercing</td><td>finesse, reach</td><td>melee attacks on creatures within 15ft with no penalties. 2d4 beyond 10ft. No unmounted penalty.</td><td>lances</td></tr>
+                <tr><td>Scream Spine</td><td>1d6 slashing</td><td>two handed, special (Range 20/40)</td><td>Can grapple enemy on hit. 1d4 extra slashing when hit by melee attacks while grappled</td><td>Whips, flails</td></tr>
+                <tr><td>Dragon Rod</td><td>1d8 blugeoning using pole or 1d6 using line</td><td>light, thrown (20/60), finesse, returning</td><td>pole is melee, line is ranged. Line can grapple on hit and pull as bonus action 10ft toward you. You can extend the line to 60 ft, but unhooks beyond that. No size limits on grapple, but pull is limited to 4 feet if they are more than 1 size larger than you.</td><td>staffs, nets</td></tr>
+                <tr><td>Wyrm Quills</td><td>1d8 piercing</td><td>reach,finesse</td><td>Prevents regaining hit points on hit until end of their next turn</td><td>daggers, darts</td></tr>
             </table>
             <p class="indent">When a Wyrmslayer weapon absorbs another weapon, it gains the magical properties, effects, bonuses and powers of the weapon it merges with, including any curses. Whilst in this form, the Wyrmslayer weapon retains its own abilities and traits, such as light, thrown or finesse. It also retains it's base damage die, unless the absorbed weapon contains a property to increase it. Wyrmslayer weapons can only merge with a weapon that matches their category. For example, a Greatspear cannot absorb the properties of a magical sword or axe and instead, must inherit the powers of a polearm.</p>
             <p class="indent">A Wyrmslayer weapon can only have one fusion at any given time. You can remove the fusion component and return both weapons to their original form whenever you please. Fusing a weapon requires 10 minutes and removing a weapon takes 1 minute. If the fused weapon requires attunement, you must follow the s tandard attunement rules after fusing to wield the weapon effectively. The weapon's appearance changes to create an amalgamation of its original look and that of its component.</p>
@@ -268,84 +268,209 @@
     </element>
     <element name="Wyrmslayer Pledge" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_WYRMSLAYER_PLEDGE">
         <description>
-            <p></p>
+            <p>At third level, you adapt to your preferred method of hunting. Your chosen conclave grants you features at 3rd level and again at 7th, 10th, 15th and 18th level.</p>
+            <p class="indent">You have a choice of Sky Splitters, Toll Sentinels, or Death Singers.</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Wyrmslayer Pledge" supports="wyrmslayer-pledge" level="3" />
+        </rules>
     </element>
     <element name="Ability Score Improvement" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASI">
         <description>
-            <p></p>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Wyrmslayer 4)" supports="Improvement Option,Wyrmslayer,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Wyrmslayer 8)" supports="Improvement Option,Wyrmslayer,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Wyrmslayer 12)" supports="Improvement Option,Wyrmslayer,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Wyrmslayer 16)" supports="Improvement Option,Wyrmslayer,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Wyrmslayer 19)" supports="Improvement Option,Wyrmslayer,19" level="19"/>
+        </rules>
     </element>
     <element name="Extra Attack" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_EXTRA_ATTACK">
         <description>
-            <p></p>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can attack twice when you take the attack action on your turn.</description>
         </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
     </element>
     <element name="Draconic Power" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_POWER">
         <description>
-            <p></p>
+            <p>Your innate draconic powers have transferred from a protective state to one that does harm. Starting at 6th level, your Leap Strike bonus damage uses whichever element you've chosen as part of the Draconic Resilience feature. If you have more than one type of Draconic resistance available, you may choose the damage type, regardless of which resistance you have active.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your Leap Strike bonus damage uses whichever element you've chosen as part of the Draconic Resilience feature. If you have more than one type of Draconic resistance available, you may choose the damage type, regardless of which resistance you have active.</description>
         </sheet>
     </element>
     <element name="Cataclysmic Impact" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_CATACLYSMIC_IMPACT">
         <description>
-            <p></p>
+            <p>Starting at 9th level, when you take the Attack action as part of Enhanced Leap, you can choose a location instead of a creature as your target. Each creature you choose within a 10 ft radius of your attack must succeed on a Strength saving throw against your save DC (8 + your proficiency + your Constitution modifier) or be knocked prone. Creatures who fail the save take full damage, as though they're subject to a weapon attack plus your Leap Strike Die, and creatures who make the save take half damage instead. You may choose a damage type from your list of Draconic Resiliences for this abilities damage. You can use this feature twice and regain all charges upon completing a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="2/Long Rest">
+            <description>When you take the Attack action as part of Enhanced Leap, you can choose a location instead of a creature as your target. Each creature you choose within a 10 ft radius of your attack must succeed on a DC {{cataclysmic-impact:dc}} Strength saving throw or be knocked prone. Creatures who fail the save take full damage, as though they're subject to a weapon attack plus your Leap Strike Die, and creatures who make the save take half damage instead. You may choose a damage type from your list of Draconic Resiliences for this abilities damage.</description>
         </sheet>
+        <rules>
+            <stat name="cataclysmic-impact:dc" value="8" bonus="base"/>
+            <stat name="cataclysmic-impact:dc" value="proficiency" />
+            <stat name="cataclysmic-impact:dc" value="constitution:modifier" />
+        </rules>
     </element>
     <element name="Mortal Enemy" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_ENEMY">
         <description>
-            <p></p>
+            <p>Wyrmslayers relish in challenging powerful foes and hold otherworldly grudges towards their adversaries. Starting at 11th level, as a bonus action, you may designate a target by uttering a creature's name you are aware of or choosing one you can see. When you do so, the creature becomes your mortal enemy and you gain the following effects against them.</p>
+            <ul>
+                <li>You can always sense each others presence within half a mile, though without an exact location.</li>
+                <li>You have advantage on any ability checks used to locate them or seek information about them.</li>
+                <li>When your mortal enemy dies, heal a number of hit points equal to your Wyrmslayer class level. If you cannot regain hit points, gain temporary hit points equal to your Wyrmslayer class level instead.</li>
+            </ul>
+            <p>When you declare a creature as your mortal enemy, they become aware of you and immediately recognise your hostility. A creature stays as your mortal enemy until either it dies, you change your mortal enemy to another creature or you choose to end this effect. You may only have one creature as your mortal enemy at a time. You can use this feature once and must finish a long rest before you can use it again.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, you may designate a target by uttering a creature's name you are aware of or choosing one you can see. When you do so, the creature becomes your mortal enemy and you gain the following effects against them.
+            -You can always sense each others presence within half a mile, though without an exact location.
+            -You have advantage on any ability checks used to locate them or seek information about them.
+            -When your mortal enemy dies, heal {{level:wyrmslayer}} hit points. If you cannot regain hit points, gain temporary hit points instead.
+            When you declare a creature as your mortal enemy, they become aware of you and immediately recognise your hostility. A creature stays as your mortal enemy until either it dies, you change your mortal enemy to another creature or you choose to end this effect. You may only have one creature as your mortal enemy at a time.</description>
         </sheet>
     </element>
     <element name="Twin Leap Strike" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_TWIN_LEAP_STRIKE">
         <description>
-            <p></p>
+            <p>You've mastered your momentum when leaping, able to switch between targets with ease. Starting at 13th level, When you use Enhanced Leap as part of a weapon attack, you can use the remainder of your leap distance to make your extra attack against another creature within the remaining range without provoking any opportunity attacks. You then land within 5ft of your second target as normal whether you have movement left or not.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use Enhanced Leap as part of a weapon attack, you can use the remainder of your leap distance to make your extra attack against another creature within the remaining range without provoking any opportunity attacks. You then land within 5ft of your second target as normal whether you have movement left or not.</description>
         </sheet>
     </element>
     <element name="Draconic Mastery" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY">
         <description>
-            <p></p>
+            <p>Starting at 14th level, Choose another element between Thunder, Necrotic, Radiant or Psychic and gain resistance to it. You may now have two Draconic Resiliences active at the same time.</p>
+        </description>
+        <sheet display="false">
+            <description>You may now have two Draconic Resiliences active at the same time.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Draconic Mastery" supports="draconic-mastery" />
+        </rules>
+    </element>    
+    <element name="Draconic Mastery (Thunder)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY_THUNDER">
+        <supports>draconic-mastery</supports>
+        <description>
+            <p>You are resistant to thunder. You may now have two Draconic Resiliences active at the same time.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You may now have two Draconic Resiliences active at the same time.</description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+    <element name="Draconic Mastery (Necrotic)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY_NECROTIC">
+        <supports>draconic-mastery</supports>
+        <description>
+            <p>You are resistant to necrotic. You may now have two Draconic Resiliences active at the same time.</p>
+        </description>
+        <sheet>
+            <description>You may now have two Draconic Resiliences active at the same time.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+    <element name="Draconic Mastery (Radiant)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY_RADIANT">
+        <supports>draconic-mastery</supports>
+        <description>
+            <p>You are resistant to radiant. You may now have two Draconic Resiliences active at the same time.</p>
+        </description>
+        <sheet>
+            <description>You may now have two Draconic Resiliences active at the same time.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+    <element name="Draconic Mastery (Psychic)" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRACONIC_MASTERY_PSYCHIC">
+        <supports>draconic-mastery</supports>
+        <description>
+            <p>You are resistant to psychic. You may now have two Draconic Resiliences active at the same time.</p>
+        </description>
+        <sheet>
+            <description>You may now have two Draconic Resiliences active at the same time.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
     </element>
     <element name="Mortal Doom" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_MORTAL_DOOM">
         <description>
-            <p></p>
+            <p>Your grudges deepen and your hatred festers as your adversaries cower in fear at your challenge. Starting at 17th level, you gain additional effects against your mortal enemy.</p>
+            <ul>
+                <li>If the creature is huge, gargantuan or colossal you gain advantage on all attacks against them.</li>
+                <li>If you're reduced to O hit points whilst in combat your mortal enemy, you can choose to drop to one hit point instead, one time per mortal enemy.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain additional effects against your mortal enemy.
+            -If the creature is huge, gargantuan or colossal you gain advantage on all attacks against them.
+            -If you're reduced to 0 hit points whilst in combat your mortal enemy, you can choose to drop to one hit point instead, one time per mortal enemy.</description>
         </sheet>
     </element>
     <element name="Aspect of the Dragon" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_ASPECT_OF_THE_DRAGON">
         <description>
-            <p></p>
+            <p>At 20th level, your weapon attacks deal Force damage. Additionally, your Draconic Resilience and Draconic Power feature can now also be Force Damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your weapon attacks deal Force damage. Additionally, your Draconic Resilience and Draconic Power feature can now also be Force Damage.</description>
         </sheet>
     </element>
     
+    <element name="Weapon Group (Wymslayer Weapons)" type="Weapon Group" source="The Wyrmslayer" id="ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS"/>
+    <element name="Seige" type="Weapon Property" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_PROPERTY_SEIGE">
+        <description>
+            <p>This weapon deals double damage to structures instead of half.</p>
+        </description>
+    </element>
+    <element name="Push" type="Weapon Property" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_PROPERTY_PUSH">
+        <description>
+            <p>When you hit with a weapon attack, you can push the creature 5ft as part of the attack.</p>
+        </description>
+    </element>
+    <element name="Returning" type="Weapon Property" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_PROPERTY_RETURNING">
+        <description>
+            <p>When you make an attack using the thrown property, the weapon returns to your hand afterwards.</p>
+        </description>
+    </element>
+    <element name="Shield" type="Weapon Property" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_PROPERTY_SHIELD">
+        <description>
+            <p>This weapon counts as a shield as well as a weapon, with its own specified armour class (AC) bonus. You cannot wield a second shield for increased AC.</p>
+        </description>
+    </element>
     
+     <element name="Weapon Proficiency (Wyrmslayer weapons)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRMSLAYER_WEAPONS">
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR" />
+        </rules>
+     </element>
+     <element name="Weapon Proficiency (Greatspear)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH,, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+    <element name="Greatspear" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GREATSPEAR">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH,, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A large yet lightweight spear with greater reach than normal. Your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR</set>
+        </setters>
+    </element>
 </elements>
