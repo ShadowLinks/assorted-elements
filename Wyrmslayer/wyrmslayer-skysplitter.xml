@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="wyrmslayer-skysplitter.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-skysplitter.xml" />
+        </update>
+    </info>
+    <element name="Sky Splitter" type="Archetype" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_WYRMSLAYER_SKYSPLITTER">
+        <supports>wyrmslayer-pledge</supports>
+        <description>
+            <p>Sky Splitter wyrmslayers are unmatched in their mobility, traversing the battlefield with blistering speed and verticality. Observers often believe they have the power of flight with how they battle, able to dissect opponents with grace, elegance and lighting fast strikes. Their training focuses on out maneuvering flying combatants and rending them from the sky. Sky Splitter wyrmslayers are natural predators towards everything below and above them, so if you see one diving towards you, they're not falling, you're their target.</p>
+            <p class="indent"></p>
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_DIVERS_ARSENAL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_GRACEFUL_AGILITY" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EVASIVE_MANEUVERS" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_VANTAGE_POINT" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_LAUNCHPAD" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_HEAVENFALL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_REND_THE_SKY" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EARTHBOUND" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_DIVERS_ARSENAL" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_GRACEFUL_AGILITY" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EVASIVE_MANEUVERS" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_VANTAGE_POINT" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_LAUNCHPAD" level="7" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_HEAVENFALL" level="10" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_REND_THE_SKY" level="15" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EARTHBOUND" level="18" />
+        </rules>
+    </element>
+    <element name="Diver's Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_DIVERS_ARSENAL">
+        <description>
+            <p>Members of the Sky Splitter Pledge have access to a unique batch of aerial focused weapons. Choose one weapon from the list below or a new weapon from the base Wyrmslayer Weapons table and become proficient with it.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damage</td><td>Properties</td><td>Abilities</td><td>Infusions</td></tr>
+                </thead>
+                <tr><td>Chain Hook</td><td>1d10 piercing</td><td>reach, finesse</td><td>When you hit a creature with an attack, you can choose latch on to them. The creature can use its action to remove the latch. When the creature moves when latched this way, you can move with them at their speed without provoking opportunity attacks.</td><td>whips, flails</td></tr>
+                <tr><td>Stilt Sabres</td><td>2d4 slashing</td><td>two handed, finesse</td><td>You can increase your height by up to 3ft whilst wielding this weapon. When you hit a creature with an attack, you can deal (1d6 + your attack modifier) slashing damage to any other creatures you choose within 5ft of you as part of the attack if the roll exceeds their AC.</td><td>shortswords, rapiers</td></tr>
+                <tr><td>Wyrm Cleaver</td><td>1d10 slashing</td><td>two handed, finesse</td><td>When you hit a creature with this weapon, prevent the creature from regaining hit points until the end of their next turn. In addition, when you slay a creature with this weapon, you heal for 1d6 hit points.</td><td>glaives, halberds</td></tr>
+                <tr><td>Flying Sword</td><td>1d8 slashing</td><td>two handed, finesse, reach</td><td>When an enemy hits you with a projectile from a ranged attack, you can use your reaction to reduce the damage taken by (1d4 + your attack modifier)</td><td>shortswords, longswords</td></tr>
+                <tr><td>Omniclaws</td><td>1d8 piercing</td><td>two handed, finesse</td><td>Wearing these weapons gives you a climbing speed of 20ft. This climbing speed also applies when clinging to creatures.</td><td>daggers, claws, fist weapons</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency (Diver's Arsenal)" supports="divers-arsenal" />
+        </rules>
+    </element>
+    <element name="Graceful Agility" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_GRACEFUL_AGILITY">
+        <description>
+            <p>Spinning in the air and controlling your momentum is what you do best. At 3rd level, you gain proficiency in Acrobatics. If you are already proficient in this skill, you gain expertise instead.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ACROBATICS" />
+        </rules>
+    </element>
+    <element name="Evasive Maneuvers" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EVASIVE_MANEUVERS">
+        <description>
+            <p>Your enhanced acrobatics make it difficult for foes to track you in battle. At 3rd level, enemies have disadvantage on opportunity attacks against you when you use Enhanced Leap.</p>
+        </description>
+        <sheet>
+            <description>Enemies have disadvantage on opportunity attacks against you when you use Enhanced Leap.</description>
+        </sheet>
+    </element>
+    <element name="Vantage Point" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_VANTAGE_POINT">
+        <description>
+            <p>Additionally at 3rd level, you can use your weapon as an anchor point against walls and ceilings. Allowing you to rest there as though you had a climbing speed. You cannot move along the surface, however you can release yourself by falling or using it as a springboard for Enhanced Leap. At 10th level, you can use Vantage Point to cling to huge, gargantuan and colossal creatures as though they were a surface. Whilst clinging this way, you are considered to be within 5ft of the surface and can still make attacks or be attacked.</p>
+        </description>
+        <sheet>
+            <description>You can use your weapon as an anchor point against walls and ceilings. Allowing you to rest there as though you had a climbing speed. You cannot move along the surface, however you can release yourself by falling or using it as a springboard for Enhanced Leap. At 10th level, you can use Vantage Point to cling to huge, gargantuan and colossal creatures as though they were a surface. Whilst clinging this way, you are considered to be within 5ft of the surface and can still make attacks or be attacked.</description>
+        </sheet>
+    </element>
+    <element name="Launchpad" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_LAUNCHPAD">
+        <description>
+            <p>Starting at 7th level, you can use your bonus action to move an extra half of your Enhanced Leap distance in any direction. You can make this smaller leap before or after your enhanced Leap.</p>
+        </description>
+        <sheet>
+            <description>You can use your bonus action to move an extra half of your Enhanced Leap distance in any direction. You can make this smaller leap before or after your enhanced Leap.</description>
+        </sheet>
+    </element>
+    <element name="Heavenfall" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_HEAVENFALL">
+        <description>
+            <p>Your mastery of landing encourages you to ascend to the highest peaks before engaging. Like a meteor from the sky, you plummet to eviscerate your foes. At 10th level, you become immune to falling damage. You can make a dive attack on a creature below you as part of your Enhanced Leap Attack, or if you're already falling vertically towards them. For every 10ft you fall, add an extra 1d4 damage to the attack up to a maximum of 10d4 at 100ft. When attacking this way you fall at a speed of 120ft per round. You can use this feature a number of times equal to your proficiency bonus and regain its uses upon finishing a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>You become immune to falling damage. You can make a dive attack on a creature below you as part of your Enhanced Leap Attack, or if you're already falling vertically towards them. For every 10ft you fall, add an extra 1d4 damage to the attack up to a maximum of 10d4 at 100ft. When attacking this way you fall at a speed of 120ft per round.</description>
+        </sheet>
+    </element>
+    <element name="Rend the Sky" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_REND_THE_SKY">
+        <description>
+            <p>You are a hunter of the sky and have learned to use your opponents momentum against them. At 15th level, you gain advantage when attacking airborne creatures and when making attacks using Heaven Fall.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage when attacking airborne creatures and when making attacks using Heaven Fall.</description>
+        </sheet>
+    </element>
+    <element name="Earthbound" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_EARTHBOUND">
+        <description>
+            <p>Dragonkind will know your wrath. In the presence of an apex Sky Splitter, no creature will ever fly again. Starting at 18th level, when you hit a creature that's airborne or has a flying speed with a weapon attack, the creature must succeed on a Strength saving throw against your save DC (8 + your proficiency + your Constitution modifier) or have its flying speed reduced to 0. Any airborne creature affected this way immediately begins falling. If you're attached to the creature using Vantage Point, the creature has disadvantage on its saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature that's airborne or has a flying speed with a weapon attack, the creature must succeed on a {{earthbound:dc}} DC Strength saving throw or have its flying speed reduced to 0. Any airborne creature affected this way immediately begins falling. If you're attached to the creature using Vantage Point, the creature has disadvantage on its saving throw.</description>
+        </sheet>
+        <rules>
+            <stat name="earthbound:dc" value="8" bonus="base"/>
+            <stat name="earthbound:dc" value="proficiency"/>
+            <stat name="earthbound:dc" value="constitution:modifier"/>
+        </rules>
+    </element>
+    <element name="Weapon Group (Diver's Arsenal)" type="Weapon Group" source="The Wyrmslayer" id="ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL"/>
+    <element name="Weapon Proficiency (Chain Hook)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAIN_HOOK">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, divers-arsenal</supports>
+    </element>
+    <element name="Weapon Proficiency (Stilt Sabres)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STILT_SABRES">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, divers-arsenal</supports>
+    </element>
+    <element name="Weapon Proficiency (Wyrm Cleaver)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRM_CLEAVER">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, divers-arsenal</supports>
+    </element>
+    <element name="Weapon Proficiency (Flying Sword)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLYING_SWORD">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, divers-arsenal</supports>
+    </element>
+    <element name="Weapon Proficiency (Omniclaws)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_OMNICLAWS">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, divers-arsenal</supports>
+    </element>
+    <element name="Chain Hook" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_CHAIN_HOOK">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING,  ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL</supports>
+        <description>
+            <p>A chain grappling hook with a dagger style blade on the end. Expands when latching into a target. Effective for clinging to moving enemies. When you hit a creature with an attack, you can choose latch on to them. The creature can use its action to remove the latch. When the creature moves when latched this way, you can move with them at their speed without provoking opportunity attacks.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHAIN_HOOK</set>
+        </setters>
+    </element>
+    <element name="Stilt Sabres" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_STILT_SABRES">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL</supports>
+        <description>
+            <p>A pair of blades worn on the side of the leg. The blades extend in a stilt-like manner, allowing for bladed kicks and leg orientated combat. Free arms are required for balance and movement. You can increase your height by up to 3ft whilst wielding this weapon. When you hit a creature with an attack, you can deal (1d6 + your attack modifier) slashing damage to any other creatures you choose within 5ft of you as part of the attack if the roll exceeds their AC.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STILT_SABRES</set>
+        </setters>
+    </element>
+    <element name="Wyrm Cleaver" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_WYRM_CLEAVER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL</supports>
+        <description>
+            <p>An enormous semi-curved scythe with a lengthy polearm handle. Imbued with a death rune, it’s reaping properties remind enemies of their own mortality. When you hit a creature with this weapon, prevent the creature from regaining hit points until the end of their next turn. In addition, when you slay a creature with this weapon, you heal for 1d6 hit points.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRM_CLEAVER</set>
+        </setters>
+    </element>
+    <element name="Flying Sword" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_FLYING_SWORD">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL</supports>
+        <description>
+            <p>A sleek sword that floats around the wearer. The blade is controlled by the user’s willpower. When an enemy hits you with a projectile from a ranged attack, you can use your reaction to reduce the damage taken by (1d4 + your attack modifier)</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLYING_SWORD</set>
+        </setters>
+    </element>
+    <element name="Omniclaws" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_OMNICLAWS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DIVERS_ARSENAL</supports>
+        <description>
+            <p>A set of claws attached to each available limb. These claws allow the user to cling and climb with ease. Wearing these weapons gives you a climbing speed of 20ft. This climbing speed also applies when clinging to creatures.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_OMNICLAWS</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+
+    <element name="Fname" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_FNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>-->
