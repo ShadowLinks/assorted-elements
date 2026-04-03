@@ -143,8 +143,8 @@
             You can infuse your weapon with a compatible weapon and it gains the magical properties, effects, bonuses, and any powers of the weapon it merges with, including curses and attunement requirements. Fusing takes 10 minutes and removing takes 1 minute.</description>
         </sheet>
         <rules>
-            <select type="Proficiency" name="Dragonslayer's Arsenal" supports="dragonslayers-arsenal" level="1" />
-            <select type="Proficiency" name="Dragonslayer's Arsenal 2" supports="dragonslayers-arsenal" level="10" />
+            <select type="Proficiency" name="Dragonslayer's Arsenal" supports="wyrmslayer-weapons" level="1" />
+            <select type="Proficiency" name="Dragonslayer's Arsenal 2" supports="wyrmslayer-weapons" level="10" />
         </rules>
     </element>
 
@@ -456,13 +456,41 @@
      <element name="Weapon Proficiency (Wyrmslayer weapons)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRMSLAYER_WEAPONS">
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BASILISK_BLADE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TITAN_SLAB" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERN_FISTS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TELECOPING_TWINLANCES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCREAM_SPINE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_ROD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRM_QUILLS" />
         </rules>
      </element>
      <element name="Weapon Proficiency (Greatspear)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR">
         <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH,, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
     </element>
+     <element name="Weapon Proficiency (Basilisk Blade)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BASILISK_BLADE">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Titan Slab)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TITAN_SLAB">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SEIGE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Wyvern Fists)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERN_FISTS">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SEIGE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Telecoping Twinlances)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TELECOPING_TWINLANCES">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Scream Spine)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCREAM_SPINE">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Dragon Rod)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_ROD">
+        <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
+     <element name="Weapon Proficiency (Wyrm Quills)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRM_QUILLS">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_PW_WS_WEAPON_PROPERTY_RETURNING, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+    </element>
     <element name="Greatspear" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GREATSPEAR">
-        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH,, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
         <description>
             <p>A large yet lightweight spear with greater reach than normal. Your weapon attacks score a critical hit on a roll of 19 or 20.</p>
         </description>
@@ -471,6 +499,92 @@
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d10</set>
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR</set>
+        </setters>
+    </element>
+    <element name="Basilisk Blade" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_BASILISK_BLADE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A colossal hunk of metal in the form of a greatsword. Effective for slicing large creatures. Extremely diffucult for the averager person to wield. This weapon deals an extra ld6 damage against Huge, Gargantuan and Colossal creatures.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">3d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BASILISK_BLADE</set>
+        </setters>
+    </element>   
+    <element name="Titan Slab" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_TITAN_SLAB">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SEIGE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>An enormous brick shaped piece of metal or rack attached to a pole handle. Calling it a hammer wolud be absurd. Uses it's own momentum to increase it's power. This weapon deals ld4 damage to enemies within 5ft of the target when landing a hit.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">3d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TITAN_SLAB</set>
+        </setters>
+    </element>
+    <element name="Wyvern Fists" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_WYVERN_FISTS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SEIGE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A pair of violent looking gloves infused with draconic fury. When you take the attack action you can use your bonus action to make an additional strike with this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WYVERN_FISTS</set>
+        </setters>
+    </element>
+    <element name="Telescopic Twinlances" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_TELECOPING_TWINLANCES">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>Paired Lances. With a built in telescopic extension, they are capable of both attacking at close range and piercing at extreme distances. This weapon can make a melee attack on any creature within 15ft with no close range or long range penalty. This weapon deals 2d4 when attacking further than 10ft. There is no unmounted penalty when wielding this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d12</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TELECOPING_TWINLANCES</set>
+        </setters>
+    </element>
+    <element name="Scream Spine" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_SCREAM_SPINE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A long segmented whip made from a carved and slimmed down dragon's spine. It makes a shrieking sound when lashed. When you hit a creature with this weapon, you can grapple them as part of the attack. Whilst grappled this way, the creature takes and additional 1d4 slashing damage each time it's hit with a melee attack from any source.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SCREAM_SPINE</set>
+        </setters>
+    </element>
+    <element name="Dragon Rod" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_DRAGON_ROD">
+        <supports>Weapon, Melee, Ranged, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A large and sturay fishing rod with  an even sturdier line. This tool is favored by Wyrmslayers who fight dragons of the sea. This weapon functions as a regular fishing rod. This weapon can make melee attacks with the pole or ranged attacks (1d6) with the fishing line. You can grapple a creature as part of your weapon attack using the fishing line. When a creature is grappled this way you can use your bonus action to pull them up to 10ft towards you. You can extend the line up to 60ft. The line unhooks if either creature is more than 60ft apart. You can grapple creatures of any size but can only pull them 5 ft if they are more than one size category larger than you.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d8</set>
+            <set name="range">20/40</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_ROD</set>
+        </setters>
+    </element>
+    <element name="Wyrm Quills" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_WYRM_QUILLS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_PW_WS_WEAPON_PROPERTY_RETURNING, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <description>
+            <p>A sharpened feather or scale, shaped into a throwable fashion. Ideal for rapid, multi hit attacks on weak points. WHen you hit a creature with this weapon, prevent the creature from regaining hp until the end of their next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="range">20/60</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WYRM_QUILLS</set>
         </setters>
     </element>
 </elements>
