@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="wyrmslayer-tollsentinel.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-tollsentinel.xml" />
+        </update>
+    </info>
+    <element name="Toll Sentinel" type="Archetype" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_WYRMSLAYER_TOLLSENTINEL">
+        <supports>wyrmslayer-pledge</supports>
+        <description>
+            <p>Earning their name from the toll taken when attempting to pass them in combat, Toll Sentinels are bulwarks dedicated to protecting their allies and staying alive. Being the only pledge trained in heavy armour and the usage of shields, Toll sentinels have adapted their leap to be a defensive tool, controlling the battlefield through sheer force of will to hold position. A Toll Sentinel will always stay alive. After all, if you aren’t dead, your enemy hasn’t won yet.</p>
+            <p class="indent"></p>
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_IRON_WILL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENSIVE_STANCE" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_HEROIC_LEAP" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECTORS_PRESENCE" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_CROWD_CONTROL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DRAGONS_TERROR" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECT_THE_WEAK" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_IRON_WILL" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENSIVE_STANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_HEROIC_LEAP" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECTORS_PRESENCE" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_CROWD_CONTROL" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DRAGONS_TERROR" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECT_THE_WEAK" level="3" />
+        </rules>
+    </element>
+    <element name="Defender's Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_REND_THE_SKY" level="15" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_EARTHBOUND" level="18" />
+        </rules>
+    </element>
+    <element name="Defender's Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Iron Will" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_IRON_WILL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Defensive Stance" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENSIVE_STANCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Heroic Leap" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_HEROIC_LEAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Protector's Presence" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECTORS_PRESENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Crowd Control" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_CROWD_CONTROL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Dragon's Terror" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DRAGONS_TERROR">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Protect the Weak" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECT_THE_WEAK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Weapon Group (Defender's Arsenal)" type="Weapon Group" source="The Wyrmslayer" id="ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL"/>
+    <element name="Weapon Proficiency (Greatshield)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD"/>
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, defenders-arsenal</supports>
+    </element>
+    
+    <element name="Greatshield" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GREATSHIELD">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING,  ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>A chain grappling hook with a dagger style blade on the end. Expands when latching into a target. Effective for clinging to moving enemies. When you hit a creature with an attack, you can choose latch on to them. The creature can use its action to remove the latch. When the creature moves when latched this way, you can move with them at their speed without provoking opportunity attacks.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+
+    <element name="Fname" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_FNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>-->

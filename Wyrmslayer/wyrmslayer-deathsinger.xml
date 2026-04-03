@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="wyrmslayer-deathsinger.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-deathsinger.xml" />
+        </update>
+    </info>
+    <element name="Death Singer" type="Archetype" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_WYRMSLAYER_DEATHSINGER">
+        <supports>wyrmslayer-pledge</supports>
+        <description>
+            <p>The terror inducing melody sounds, as a Death Singer prepares their final blow. The large beast attempts to flee in fear, as a well placed shot sinks into its heart. Aptly named after the cacophony of torturous screams caused by their precision, Death Singers excel at dealing massive damage to single targets. Their unique ability to incorporate their Leap Strike into a ranged attack allows them to kite opponents and stay out of range without a loss in damage. Preparing the perfect angle and moment for a high damage strike is the essence of being a Death Singer.</p>
+            <p class="indent"></p>
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_DEADLY_ARSENAL" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_KITING_LEAP" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_WEAKNESS_EXPLOIT" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_LIMB_FROM_LIMB" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_CONDEMN_THE_LIVING" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_BRING_IT_DOWN" />
+            <div element="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_HEART_PIERCER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_DEADLY_ARSENAL" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_KITING_LEAP" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_WEAKNESS_EXPLOIT" level="3" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_LIMB_FROM_LIMB" level="7" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_CONDEMN_THE_LIVING" level="10" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_BRING_IT_DOWN" level="15" />
+            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_HEART_PIERCER" level="18" />
+        </rules>
+    </element>
+    <element name="Deadly Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_DEADLY_ARSENAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Kiting Leap" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_KITING_LEAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Weakness Exploit" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_WEAKNESS_EXPLOIT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Limb From Limb" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_LIMB_FROM_LIMB">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Condemn the Living" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_CONDEMN_THE_LIVING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Bring it Down" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_BRING_IT_DOWN">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Heart Piercer" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_HEART_PIERCER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
+
+<!-- 
+
+    <element name="Fname" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_FNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>-->
