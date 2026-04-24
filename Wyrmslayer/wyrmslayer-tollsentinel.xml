@@ -36,85 +36,189 @@
     </element>
     <element name="Defender's Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL">
         <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_REND_THE_SKY" level="15" />
-            <grant type="Archetype Feature" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_EARTHBOUND" level="18" />
-        </rules>
-    </element>
-    <element name="Defender's Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENDERS_ARSENAL">
-        <description>
-            <p></p>
+            <p>Members of the Toll Sentinel Pledge have access to a defensive pool of weapons. Choose one weapon from the list below or a weapon from the base Wyrmslayer Weapons and become proficient with it.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damage</td><td>Properties</td><td>Abilities</td><td>Infusions</td></tr>
+                </thead>
+                <tr><td>Greatshield</td><td>1d6 bludgeoning</td><td>Two handed, Shield (2-AC)</td><td>Critical hits against you become a normal hit instead whilst wielding this weapon.</td><td>shields, greatclubs</td></tr>
+                <tr><td>Saviour WIngs</td><td>1d10 slashing</td><td>Two handed, finesse, Shield (1-AC)</td><td>Either singular or a pair, these large wings wrap around the wielder and their allies, shielding them from harm from all directions.</td><td>shields, longswords, shortswords</td></tr>
+                <tr><td>Thunder Vambrace</td><td>2d6 bludgeoning</td><td>Two handed, push, seige</td><td>This weapon deals double damage to structures and constructs.</td><td>fist weapons, hammers, mauls, clubs, maces</td></tr>
+                <tr><td>Gazer Disc</td><td>1d4 piercing</td><td>Shield (2-AC)</td><td>When you make a weapon attack whilst holding this shield, the target make a CHA saving throw against your save DC or have disadvantage on attack rolls against targets other than you until the end of your next turn.</td><td>shields, orbs</td></tr>
+                <tr><td>Deflector's Pledge</td><td>1d8 bludgeoning</td><td>Two handed, finesse, Shield (2-AC)</td><td>You can use your attack action to instead prepare yourself for a parry. Whilst in parry mode, ranged projectiles that hit allied targets (including you) within 5ft of you are instead deflected back at the attacker, dealing (1d6 + your attack modifier) piercing damage to them instead.</td><td>shields, crossbows</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency (Defender's Arsenal)" supports="defenders-arsenal||wyrmslayer-weapons" />
+        </rules>
     </element>
     <element name="Iron Will" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_IRON_WILL">
         <description>
-            <p></p>
+            <p>Formidable and untouchable, a Toll Sentinel stands tall. At 3rd level, you gain proficiency in heavy armour and shields.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
     </element>
     <element name="Defensive Stance" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DEFENSIVE_STANCE">
         <description>
-            <p></p>
+            <p>A powerful aura radiates from you as you prepare to protect those who need it on the battlefield. At 3rd level, as a bonus action you can consume the use of your Enhanced Leap and take a defensive stance, rooting yourself in place and reducing your movement to 0. Whilst in this stance, you gain temporary hit points equal to your Leap Damage Die and your attack range increases to a minimum of 10ft, regardless of which weapon you are using. In addition, you and all allies within 10ft of you gain a +1 bonus to their AC and you can now use Heroic Leap as a reaction. You can still attack as normal whilst your Defensive Stance is active and you can choose to end it at any point during your turn. You cannot use Leap Strike whilst in your Defensive Stance.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a bonus action you can consume the use of your Enhanced Leap and take a defensive stance, rooting yourself in place and reducing your movement to 0. Whilst in this stance, you gain {{leap-strike:damage}} temporary hit points and your attack range increases to a minimum of 10ft, regardless of which weapon you are using. In addition, you and all allies within 10ft of you gain a +1 bonus to their AC and you can now use Heroic Leap as a reaction. You can still attack as normal whilst your Defensive Stance is active and you can choose to end it at any point during your turn. You cannot use Leap Strike whilst in your Defensive Stance.</description>
         </sheet>
     </element>
     <element name="Heroic Leap" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_HEROIC_LEAP">
         <description>
-            <p></p>
+            <p>Starting at 3rd level, as a reaction whilst in your Defensive Stance, when a creature within your leap distance takes damage, you can use your enhanced leap to immediately leap to their side. Roll your Leap Strike damage die and reduce the creature’s damage taken by the amount rolled. The chosen creature must have a free space within 5ft of them to use this feature. When you move this way, you retain your Defensive Aura. At 15th level, you can roll your Leap Die twice for the damage reduction. Note that if you’ve already used Enhanced Leap on your turn, you cannot use Heroic Leap.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As a reaction whilst in your Defensive Stance, when a creature within your leap distance takes damage, you can use your enhanced leap to immediately leap to their side. Roll your Leap Strike damage die (d{{leap-strike:damage}}) and reduce the creature’s damage taken by the amount rolled. The chosen creature must have a free space within 5ft of them to use this feature. When you move this way, you retain your Defensive Aura. At 15th level, you can roll your Leap Die twice for the damage reduction. Note that if you’ve already used Enhanced Leap on your turn, you cannot use Heroic Leap.</description>
         </sheet>
     </element>
     <element name="Protector's Presence" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECTORS_PRESENCE">
         <description>
-            <p></p>
+            <p>You can assist your closest allies in their struggles and hardships. Starting at 7th level, whilst in your Defensive Stance, you and all allies within your 10ft radius have advantage on their strength and dexterity saving throws.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whilst in your Defensive Stance, you and all allies within your 10ft radius have advantage on their strength and dexterity saving throws.</description>
         </sheet>
     </element>
     <element name="Crowd Control" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_CROWD_CONTROL">
         <description>
-            <p></p>
+            <p>Starting at 10th level, when you deal damage to a creature using the attack action or Cataclysmic impact, you can push them 5ft in a direction of your choosing, regardless of their size. If you’re making an attack using Enhanced Leap, you can increase this distance to 10ft. Additionally, when you make an attack with Leap Strike, you can enter your Defensive Stance.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you deal damage to a creature using the attack action or Cataclysmic impact, you can push them 5ft in a direction of your choosing, regardless of their size. If you’re making an attack using Enhanced Leap, you can increase this distance to 10ft. Additionally, when you make an attack with Leap Strike, you can enter your Defensive Stance.</description>
         </sheet>
     </element>
     <element name="Dragon's Terror" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_DRAGONS_TERROR">
         <description>
-            <p></p>
+            <p>At 15th level, whilst in your Defensive Stance, allies within your 10ft radius gain your current Draconic Resilience. In addition, when an enemy enters your Defensive Stance radius or starts their turn there, they must succeed on a charisma save against your Wyrmslayer save DC (8 + your proficiency + your Constitution modifier) or become frightened of you until the end of their next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whilst in your Defensive Stance, allies within your 10ft radius gain your current Draconic Resilience. In addition, when an enemy enters your Defensive Stance radius or starts their turn there, they must succeed on a DC {{cataclysmic-impact:dc}} charisma save or become frightened of you until the end of their next turn.</description>
         </sheet>
     </element>
     <element name="Protect the Weak" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_PROTECT_THE_WEAK">
         <description>
-            <p></p>
+            <p>Starting at 18th, you can use Heroic Leap regardless of whether you are in your Defensive Stance or not. When you use Heroic Leap this way, you can immediately enter Defensive Stance. In addition when an ally within your Defensive Stance range takes damage, you can nullify all of their damage taken this round if they stay in the stance radius, as well as any negative effects that would afflict them. Once you use this feature, you must finish a long rest before you can do so again.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can use Heroic Leap regardless of whether you are in your Defensive Stance or not. When you use Heroic Leap this way, you can immediately enter Defensive Stance. In addition when an ally within your Defensive Stance range takes damage, you can nullify all of their damage taken this round if they stay in the stance radius, as well as any negative effects that would afflict them.</description>
         </sheet>
     </element>
     <element name="Weapon Group (Defender's Arsenal)" type="Weapon Group" source="The Wyrmslayer" id="ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL"/>
-    <element name="Weapon Proficiency (Greatshield)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD"/>
-        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, defenders-arsenal</supports>
+    <element name="Weapon Proficiency (Greatshield)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, defenders-arsenal</supports>
     </element>
     
     <element name="Greatshield" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GREATSHIELD">
-        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING,  ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>An enormous shield that covers the wielders entire body from one side. Its sheer weight makes it a decent weapon. Critical hits against you become a normal hit instead whilst wielding this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2"  bonus="shield" alt="Greatshield"/>
+        </rules>
+    </element>
+
+    <element name="Weapon Proficiency (Saviour Wings)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SAVIOURWINGS">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_PW_WS_WEAPON_PROPERTY_SHIELD, ID_PW_WS_WEAPON_PROPERTY_SEIGE, defenders-arsenal</supports>
+    </element>
+    
+    <element name="Saviour Wings" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_SAVIOURWINGS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_PW_WS_WEAPON_PROPERTY_SHIELD, ID_PW_WS_WEAPON_PROPERTY_SEIGE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>Either singular or a pair, these large wings wrap around the wielder and their allies, shielding them from harm from all directions. You gain 15ft increased movement speed when moving towards allies within 200ft. Allied creatures excluding receive +1 AC whilst standing within 5ft of you when you wield this weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SAVIOURWINGS</set>
+        </setters><rules>
+            <stat name="ac:shield" value="1"  bonus="shield" alt="Saviour Wings"/>
+        </rules>
+    </element>
+    <element name="Weapon Proficiency (Thunder Vambrace)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_THUNDERVAMBRACE">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_PW_WS_WEAPON_PROPERTY_SEIGE, defenders-arsenal</supports>
+    </element>
+    
+    <element name="Thunder Vambrace" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_THUNDERVAMBRACE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_PW_WS_WEAPON_PROPERTY_SEIGE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>A large singular gauntlet that covers the entire arm. It’s thunderous power can push and break both objects and people with ease. This weapon deals double damage to structures and constructs.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">2d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_THUNDERVAMBRACE</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Gazer Disc)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GAZERDISC">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_PW_WS_WEAPON_PROPERTY_SHIELD, defenders-arsenal</supports>
+    </element>
+    
+    <element name="Gazer Disc" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GAZERDISC">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_PW_WS_WEAPON_PROPERTY_SHIELD, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>A circular shield with a pair of horrific dragon eyes. Their otherworldly power goads an enemies gaze. When you make a weapon attack whilst holding this shield, the target make a CHA saving throw against your save DC or have disadvantage on attack rolls against targets other than you until the end of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAZERDISC</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2"  bonus="shield" alt="Gazer Disc"/>
+        </rules>
+    </element>
+    <element name="Weapon Proficiency (Deflector's Pledge)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DEFLECTORSPLEDGE">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SHIELD, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, defenders-arsenal</supports>
+    </element>
+    
+    <element name="Deflector's Pledge" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_DEFLECTORSPLEDGE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PW_WS_WEAPON_PROPERTY_SHIELD, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
+        <description>
+            <p>A valiant kite shield emblazoned with a dragon motif. One handed, yet requiring both arms to posture and balance correctly. This shield reflects attacking missiles back with ease. You can use your attack action to instead prepare yourself for a parry. Whilst in parry mode, ranged projectiles that hit allied targets (including you) within 5ft of you are instead deflected back at the attacker, dealing (1d6 + your attack modifier) piercing damage to them instead.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DEFLECTORSPLEDGE</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2"  bonus="shield" alt="Deflector's Pledge"/>
+        </rules>
+    </element>
+</elements>
+
+<!-- 
+
+    
+    <element name="Weapon Proficiency (WeaponName)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WEAPONNAME">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, defenders-arsenal</supports>
+    </element>
+    
+    <element name="WeaponName" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_WEAPONNAME">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DEFENDERS_ARSENAL</supports>
         <description>
             <p>A chain grappling hook with a dagger style blade on the end. Expands when latching into a target. Effective for clinging to moving enemies. When you hit a creature with an attack, you can choose latch on to them. The creature can use its action to remove the latch. When the creature moves when latched this way, you can move with them at their speed without provoking opportunity attacks.</p>
         </description>
@@ -122,13 +226,9 @@
             <set name="category">Weapons</set>
             <set name="slot">onehand</set>
             <set name="damage" type="piercing">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSHIELD</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WEAPONNAME</set>
         </setters>
     </element>
-</elements>
-
-<!-- 
-
     <element name="Fname" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_TOLLSENTINEL_FNAME">
         <description>
             <p></p>

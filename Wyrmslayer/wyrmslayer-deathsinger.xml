@@ -34,63 +34,194 @@
     </element>
     <element name="Deadly Arsenal" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_DEADLY_ARSENAL">
         <description>
-            <p></p>
+            <p>Members of the Death Singer Pledge have access to weapons focused on precision and range. Whilst this pledge focuses on ranged combat, melee weapons are still viable and effective. Choose one weapon from the list below or a weapon from the base Wyrmslayer Weapons table and become proficient with it.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damage</td><td>Properties</td><td>Abilities</td><td>Infusions</td></tr>
+                </thead>
+                <tr><td>Greatbow</td><td>1d10 piercing</td><td>Two Handed, Ammunition, Range (150/300)</td><td>Your weapon attacks score a critical hit on a roll of 19 or 20.</td><td>longbows, shortbows</td></tr>
+                <tr><td>Disc Launchers</td><td>1d6 slashing</td><td>Two Handed, Finesse, Loading, Ammunition, Range (40/120)</td><td>Once per turn when you hit a creature with an attack, you can deal (1d6 + your attack modifier) to another creature within 15ft of the target. You can also make an extra attack using your bonus action regardless of the Loading property.</td><td>crowssbows</td></tr>
+                <tr><td>Nail Rifle</td><td>2d6 piercing</td><td>Two Handed, Finesse, Loading, Ammunition, Range (200/400)</td><td>This weapon deals an additional 1d6 when attacking enemies more than 50ft away. This weapon also deals 1d4 less damage if the target is within 25ft.</td><td>firearms</td></tr>
+                <tr><td>Ricochet Orb</td><td>1d4 bludgeoning</td><td>Finesse, Thrown, (20/60), Returning</td><td>Subsequent attacks without missing increase this weapons damage by 1d4 each hit after the first up to a maximum of 4d4. This bonus resets on a miss.</td><td>slings, light hammers, clubs</td></tr>
+                <tr><td>Jaw Blaster</td><td>2d4 bludgeoning</td><td>Two Handed, Push, Loading, Range (20/40)</td><td>This weapon deals an additional 1d4 damage when attacking enemies within 10ft. This weapon also deals 1d4 less damage if the target is more than 15ft away.</td><td>firearms</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency (Deadly Arsenal)" supports="deadly-arsenal||wyrmslayer-weapons" />
+        </rules>
     </element>
     <element name="Kiting Leap" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_KITING_LEAP">
         <description>
-            <p></p>
+            <p>Attacking deadly foes is much safer from afar. Beginning at 3rd level, you can make a ranged attack instead of a melee attack during your Enhanced Leap. When you choose a target for your Leap Strike, jump to a location where they are within your non-disadvantaged attack range, making the attack in midair or when you land. During your leap, your weapon gains an extra 10ft range if it is a ranged weapon or has the thrown property. If you’re wielding a melee weapon, it gains the thrown and returning properties with a range of (10/20) during the attack. Melee weapons used this way do not receive the bonus 10ft range. Kiting Leap uses all of your movement and you cannot use Kiting Leap if you have already moved during your turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can make a ranged attack instead of a melee attack during your Enhanced Leap. When you choose a target for your Leap Strike, jump to a location where they are within your non-disadvantaged attack range, making the attack in midair or when you land. During your leap, your weapon gains an extra 10ft range if it is a ranged weapon or has the thrown property. If you’re wielding a melee weapon, it gains the thrown and returning properties with a range of (10/20) during the attack. Melee weapons used this way do not receive the bonus 10ft range. Kiting Leap uses all of your movement and you cannot use Kiting Leap if you have already moved during your turn.</description>
         </sheet>
     </element>
     <element name="Weakness Exploit" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_WEAKNESS_EXPLOIT">
         <description>
-            <p></p>
+            <p>Death Singers excel at chipping away their opponents defenses to set up their allies or themselves. At 3rd level, when you strike a creature or object with Kiting Leap, their armour class gets lowered by 1 until the beginning of your next turn. At 15th level, the creature’s armour class is lowered by 2 instead. Subsequent hits cannot reduce the creature’s AC further than the current lowered amount.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you strike a creature or object with Kiting Leap, their armour class gets lowered by 1 until the beginning of your next turn.Subsequent hits cannot reduce the creature’s AC further than the current lowered amount.</description>
+            <description level="15">When you strike a creature or object with Kiting Leap, their armour class gets lowered by 2 until the beginning of your next turn.Subsequent hits cannot reduce the creature’s AC further than the current lowered amount.</description>
         </sheet>
     </element>
     <element name="Limb From Limb" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_LIMB_FROM_LIMB">
         <description>
-            <p></p>
+            <p>Your untouchable aim allows you the luxury of targeting body parts whilst others struggle to even hit. Starting at 7th level, when you make an attack, you can use your bonus action to choose a creature’s appendage as your target. Choose between targeting a creature’s Vital Spot, Movement or Offensive Capability. Some creatures may not have the appropriate targetable appendages (Consult your GM if necessary). If your attack lands, the creature receives the following effect depending on which part is hit.</p>
+            <ul>
+                <li>Vital Spot - The creature takes an additional 1d6 damage from the attack.</li>
+                <li>Movement - The creature’s movement speed is reduced by 10ft.</li>
+                <li>Offensive Capability - The creature takes a negative 1d4 to their attack rolls until the start of your next turn.</li>
+            </ul>
+            <p class="indent">You can use this feature as part of your Kiting leap, should you choose to do so.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you make an attack, you can use your bonus action to choose a creature’s appendage as your target. Choose between targeting a creature’s Vital Spot, Movement or Offensive Capability. Some creatures may not have the appropriate targetable appendages (Consult your GM if necessary). If your attack lands, the creature receives the following effect depending on which part is hit.
+            - Vital Spot - The creature takes an additional 1d6 damage from the attack.
+            - Movement - The creature’s movement speed is reduced by 10ft.
+            - Offensive Capability - The creature takes a negative 1d4 to their attack rolls until the start of your next turn.
+            You can use this feature as part of your Kiting leap, should you choose to do so.
+            </description>
         </sheet>
     </element>
     <element name="Condemn the Living" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_CONDEMN_THE_LIVING">
         <description>
-            <p></p>
+            <p>At 10th level, your precision takes the form of extreme power. Concentrate a powerful attack, taking aim at a creature. If the attack lands, send the creature 20ft in a straight line if it’s large or smaller, 10ft if it’s Huge and 5ft if it’s Gargantuan. If the creature hit collides with another creature, the second creature takes half damage from the attack and is also pushed the remainder of that distance. If the hit creature instead, collides with a wall or ceiling as part of the movement, they become pinned, receiving the restrained condition until the end of their next turn and taking 2d10 extra damage. You can use this feature twice and must complete a long rest to regain any uses. At 18th level, the collision can hit two additional creatures instead of one. In addition, the pinned damage from colliding with a surface increases to 4d10.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="2/Long Rest">
+            <description>Concentrate a powerful attack, taking aim at a creature. If the attack lands, send the creature 20ft in a straight line if it’s large or smaller, 10ft if it’s Huge and 5ft if it’s Gargantuan. If the creature hit collides with another creature (up to 2), the second creature takes half damage from the attack and is also pushed the remainder of that distance. If the hit creature instead, collides with a wall or ceiling as part of the movement, they become pinned, receiving the restrained condition until the end of their next turn and taking 4d10 extra damage.</description>
+            <description level="18"></description>
         </sheet>
     </element>
     <element name="Bring it Down" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_BRING_IT_DOWN">
         <description>
-            <p></p>
+            <p>At 15th level, Roll your Leap Strike die twice when attacking huge, gargantuan or colossal creatures.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Roll your Leap Strike die twice when attacking huge, gargantuan or colossal creatures.</description>
         </sheet>
     </element>
     <element name="Heart Piercer" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_HEART_PIERCER">
         <description>
-            <p></p>
+            <p>The moment in time stands still, as you become one with your breathing. At 18th level, you can enter a focused state, aiming for the heart of your foes. As a bonus action, you can cause your next attack you make before the end of this turn to gain advantage and automatically critically strike if it lands. If the attack misses, you regain one use of this feature. If the attack misses a second time, you lose your chance. Once you use this feature, you cannot do so again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description> As a bonus action, you can cause your next attack you make before the end of this turn to gain advantage and automatically critically strike if it lands. If the attack misses, you regain one use of this feature. If the attack misses a second time, you lose your chance.</description>
         </sheet>
+    </element>
+
+    <element name="Weapon Group (Deadly Arsenal)" type="Weapon Group" source="The Wyrmslayer" id="ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL"/>
+    
+    <element name="Weapon Proficiency (Greatbow)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATBOW">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, deadly-arsenal</supports>
+    </element>
+    
+    <element name="Greatbow" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_GREATBOW">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>An abnormally large bow that fires giant arrows almost the size of javelins. Your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATBOW</set>
+            <set name="range">150/300</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Disc Launchers)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DISCLAUNCHERS">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, deadly-arsenal</supports>
+    </element>
+    
+    <element name="Disc Launchers" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_DISCLAUNCHERS">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>A pair of wrist mounted crossbows designed to fire circular bladed discs. Ideal for curving and firing around corners. Once per turn when you hit a creature with an attack, you can deal (1d6 + your attack modifier) to another creature within 15ft of the target. You can also make an extra attack using your bonus action regardless of the Loading property.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISCLAUNCHERS</set>
+            <set name="range">40/120</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Nail Rifle)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NAILRIFLE">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, deadly-arsenal</supports>
+    </element>
+    
+    <element name="Nail Rifle" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_NAILRIFLE">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>This gigantic railgun style firearm fires its ammunition as concentrated magical energy, dealing more damage as the shot travels. This weapon deals an additional 1d6 when attacking enemies more than 50ft away. This weapon also deals 1d4 less damage if the target is within 25ft.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_NAILRIFLE</set>
+            <set name="range">200/400</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Ricochet Orb)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RICOCHETORB">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_PW_WS_WEAPON_PROPERTY_RETURNING, deadly-arsenal</supports>
+    </element>
+    
+    <element name="Ricochet Orb" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_RICOCHETORB">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_PW_WS_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>A metallic lightweight ball with vibrating energy. It builds up momentum as it bounces and always returns to it’s wielder. Subsequent attacks without missing increase this weapons damage by 1d4 each hit after the first up to a maximum of 4d4. This bonus resets on a miss.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RICOCHETORB</set>
+            <set name="range">20/60</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Jaw Blaster)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAWBLASTER">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_INTERNAL_WEAPON_PROPERTY_RANGE, deadly-arsenal</supports>
+    </element>
+    
+    <element name="Jaw Blaster" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_JAWBLASTER">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_PW_WS_WEAPON_PROPERTY_PUSH, ID_INTERNAL_WEAPON_PROPERTY_RANGE, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>This shotgun style firearm is designed for extreme close quarters action by making miniature explosions. The shrapnel spread is ineffective at longer ranges. This weapon deals an additional 1d4 damage when attacking enemies within 10ft. This weapon also deals 1d4 less damage if the target is more than 15ft away.</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_JAWBLASTER</set>            
+            <set name="range">20/40</set>
+        </setters>
     </element>
 </elements>
 
 <!-- 
+
+    <element name="Weapon Proficiency (WeaponName)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WEAPONNAME">
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, deadly-arsenal</supports>
+    </element>
+    
+    <element name="WeaponName" type="Weapon" source="The Wyrmslayer" id="ID_PW_WS_WEAPON_WEAPONNAME">
+        <supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_DEADLY_ARSENAL</supports>
+        <description>
+            <p>Desc</p>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WEAPONNAME</set>
+        </setters>
+    </element>
 
     <element name="Fname" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_DEATHSINGER_FNAME">
         <description>

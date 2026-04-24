@@ -52,7 +52,7 @@
             <description></description>
         </sheet>
         <rules>
-            <select type="Proficiency" name="Weapon Proficiency (Diver's Arsenal)" supports="divers-arsenal" />
+            <select type="Proficiency" name="Weapon Proficiency (Diver's Arsenal)" supports="divers-arsenal||wyrmslayer-weapons" />
         </rules>
     </element>
     <element name="Graceful Agility" type="Archetype Feature" source="The Wyrmslayer" id="ID_PW_WS_ARCHETYPE_FEATURE_WYRMSLAYER_SKYSPLITTER_GRACEFUL_AGILITY">
