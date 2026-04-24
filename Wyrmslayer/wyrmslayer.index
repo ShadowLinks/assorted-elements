@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
     <info>
-        <update version="0.2.1">
+        <update version="0.3.1">
             <file name="wyrmslayer.index" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer.index" />
         </update>
     </info>
@@ -11,8 +11,8 @@
         <file name="wyrmslayer-deathsinger.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-deathsinger.xml" />
         <file name="wyrmslayer-skysplitter.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-skysplitter.xml" />
         <file name="wyrmslayer-tollsentinel.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-tollsentinel.xml" />
-        <!--
+
         <file name="lineages.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/lineages.xml" />
-        <file name="feats.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/feats.xml" />-->
+        <file name="feats.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/feats.xml" />
     </files>
 </index>

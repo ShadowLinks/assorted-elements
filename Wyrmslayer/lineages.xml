@@ -8,29 +8,131 @@
     </info>
     <element name="Wyrm Plagued" type="Race" source="The Wyrmslayer" id="ID_PW_WS_RACE_WYRM_PLAGUED">
         <description>
-            <p></p>
+            <p>Plagued by draconic disease imbued by another wyrm, you’ve become part dragon yourself. Not all dragons would want to imbue such a curse upon other individuals, let alone even being capable of doing so, making the disease rare and of unknown purpose. Whilst mostly a disturbing negative trait, some see the Wyrm Plagued as blessed beings. Some Wyrms who imbue the curse may do so with good intent, creating their own ideal blessed warrior.</p>
+            <p class="indent">The Wyrm Plagued disease can be cured if the dragon who imbued it is slain. The body must also be destroyed, otherwise the curse may persist. Many have been left unable to cure themselves as the bones of their imbuer yet still remain.</p>
             <h4>Appearance</h4>
-            <p></p>
+            <p>Inheriting the curse has various distinctive effects on your appearance that will manifest differently per person, with some not being present at all. Choose whichever features you’d like, or have your GM choose them for you. You can even have them grow overtime as you play your character, to make it feel more like a transformation. These appearance changes include:</p>
+            <ul>
+                <li>Your skin is covered in patches of scales, their colour based on the dragon that imbued it</li>
+                <li>Your teeth sharpen and increase in length.</li>
+                <li>Your eyes become slit and brightly coloured.</li>
+                <li>You grow a tail.</li>
+                <li>You sprout horns, and/or spikes around your spine and arms.</li>
+                <li>Your hands become claws.</li>
+                <li>Smoke exhales when you breathe.</li>
+                <li>You grow a pair of non-functioning wings.</li>
+            </ul>
+            <h4>Origin Lineage</h4>
+            <p>Wyrm Plagued individuals can be of any origin lineage. When playing a Wyrm Plagued, first choose another lineage to base your initial appearance on. The lineage you choose will affect your character size.</p>
             <p class="indent"></p>
-            <h4>HEADING</h4>
+            <h4>Wyrm Plagued Traits</h4>
             <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one score by 2 and another by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> While regarded as a sickness, the Wyrm Plagued have been known to live much longer than usual, sometimes double.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium or Small based on Origin Lineage. </p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet</p>
+            <p class="indent"><strong><em>Dragon Sight.</em></strong> You gain blindsight up to a range of 5ft.</p>
+            <p class="indent"><strong><em>Bound in Flesh.</em></strong> You’re tied to the Wyrm who plagued you, hearing its influence and voice inside your head. The dragon can communicate with you at will and may use its influence to try and make you perform certain actions towards its benefit. You have disadvantage on all Intelligence, Wisdom and Charisma saving throws against this creature.</p>
+            <p class="indent"><strong><em>Wyrm Sense.</em></strong> You feel an otherworldly connection between dragonkind and yourself. Whilst a dragon exists within miles of you, you are able to sense a general presence though you cannot decipher exactly where it is. Furthermore, you are immune to being surprised by draconic and dragon-related creatures.</p>
+            <p class="indent"><strong><em>Terror Visage.</em></strong> YOu gain proficiency in the Intimidation skill.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can read, speak, and write draconic</p>
         </description>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID____" />
-            <grant type="Racial Trait" id="ID____" />
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_BOUND_IN_FLESH" />
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_WYRM_SENSE" />
             <select type="Racial Trait" name="Size (Origin Lineage)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="5" bonus="base" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Ability Score Increase 2"/>
+            <select type="Ability Score Improvement" name="Ability Score Improvement +1 (Custom Lineage)" supports="Custom Ability Score Increase 1"/>
         </rules>
+    </element>
+    <element name="Bound in Flesh" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_BOUND_IN_FLESH">
+        <description>
+            <p>You’re tied to the Wyrm who plagued you, hearing its influence and voice inside your head. The dragon can communicate with you at will and may use its influence to try and make you perform certain actions towards its benefit. You have disadvantage on all Intelligence, Wisdom and Charisma saving throws against this creature.</p>
+        </description>
+        <sheet>
+            <description>You’re tied to the Wyrm who plagued you, hearing its influence and voice inside your head. The dragon can communicate with you at will and may use its influence to try and make you perform certain actions towards its benefit. You have disadvantage on all Intelligence, Wisdom and Charisma saving throws against this creature.</description>
+        </sheet>
+    </element>
+    <element name="Wyrm Sense" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_WYRM_SENSE">
+        <description>
+            <p>You feel an otherworldly connection between dragonkind and yourself. Whilst a dragon exists within miles of you, you are able to sense a general presence though you cannot decipher exactly where it is. Furthermore, you are immune to being surprised by draconic and dragon-related creatures.</p>
+        </description>
+        <sheet>
+            <description>Whilst a dragon exists within miles of you, you are able to sense a general presence though you cannot decipher exactly where it is. Furthermore, you are immune to being surprised by draconic and dragon-related creatures.</description>
+        </sheet>
+    </element>
+    <element name="Goldforged" type="Race" source="The Wyrmslayer" id="ID_PW_WS_RACE_GOLDFORGED">
+        <description>
+            <p>A glorious being composed of solid gold. Incredibly rare, their lustrous and treasure-like visage have made them the living target of greed-driven dragons. Sought as an incredible prize to add to a wyrm’s hoard, and caged for eternity. You’re more likely to find a Goldforged within a dragon’s hoard than out traversing the land. Living for hundreds of years and constantly reincarnating themselves with no previous memory, there is little known of their origins. Many believe they are the creation of an artisan dragon from a time long ago.</p>
+            <h4>Appearance</h4>
+            <p>Usually androgynous in appearance and standing at around 6ft tall. Goldforged come in various shapes and sizes reminiscent of human-kind. Experiment with appearances and genders that suit your aesthetic. Remember, not everyone’s favourite colour is gold. You might choose to have your Goldforged be made of silver, bronze or even some kind of gem. The core concept of the lineage is a being made of precious material and a desired prize of a dragon’s hoard so feel free experiment with your aesthetic as you see fit.</p>
+            <h4>Goldforged Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Constitution score by 2 and your Charisma score by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> The Goldforged are immortal beings that take different forms upon rebirth. Every few hundred years, they solidify, turning into a solid gold statue of themselves. After another one hundred or so years, they melt down organically and are reborn from their own liquid pool. This rebirth encompasses a new adult form and persona with their previous memories completely erased.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Your size is medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30ft.</p>
+            <p class="indent"><strong><em>Solid Innards.</em></strong> You don’t need to eat, drink or breathe.</p>
+            <p class="indent"><strong><em>False Statue.</em></strong> Whilst remaining motionless, you are indistinguishable from an immaculate and decorated statue. Goldforged also sleep in a motionless state and can do so whilst standing or remaining upright.</p>
+            <p class="indent"><strong><em>Impeccable Material.</em></strong> You gain resistance to Slashing and Piercing damage.</p>
+            <p class="indent"><strong><em>Malleable Form.</em></strong> You have the ability to liquify and reshape parts of your body. You may pass through interlaced objects and surfaces such as fences, prison bars or nets at half your movement speed. Any equipment you’re wearing or carrying also magically inherits these properties whilst passing through the surface.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can read, speak and write Primordial.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_SOLID_INNARDS" />
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_FALSE_STATUE" />
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_IMPECCABLE_MATERIAL" />
+            <grant type="Racial Trait" id="ID_PW_WS_RACIAL_TRAIT_MALLEABLE_FORM" />
+            
+            <stat name="Constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+        </rules>
+    </element>
+    <element name="Solid Innards" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_SOLID_INNARDS">
+        <description>
+            <p>You don’t need to eat, drink or breathe.</p>
+        </description>
+        <sheet>
+            <description>You don’t need to eat, drink or breathe.</description>
+        </sheet>
+    </element>
+    <element name="False Statue" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_FALSE_STATUE">
+        <description>
+            <p>Whilst remaining motionless, you are indistinguishable from an immaculate and decorated statue. Goldforged also sleep in a motionless state and can do so whilst standing or remaining upright.</p>
+        </description>
+        <sheet>
+            <description>Whilst remaining motionless, you are indistinguishable from an immaculate and decorated statue. Goldforged also sleep in a motionless state and can do so whilst standing or remaining upright.</description>
+        </sheet>
+    </element>
+    <element name="Impeccable Material" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_IMPECCABLE_MATERIAL">
+        <description>
+            <p>You gain resistance to Slashing and Piercing damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+        </rules>
+    </element>
+    <element name="Malleable Form" type="Racial Trait" source="The Wyrmslayer" id="ID_PW_WS_RACIAL_TRAIT_MALLEABLE_FORM">
+        <description>
+            <p>You have the ability to liquify and reshape parts of your body. You may pass through interlaced objects and surfaces such as fences, prison bars or nets at half your movement speed. Any equipment you’re wearing or carrying also magically inherits these properties whilst passing through the surface.</p>
+        </description>
+        <sheet>
+            <description>You have the ability to liquify and reshape parts of your body. You may pass through interlaced objects and surfaces such as fences, prison bars or nets at half your movement speed. Any equipment you’re wearing or carrying also magically inherits these properties whilst passing through the surface.</description>
+        </sheet>
     </element>
 </elements>

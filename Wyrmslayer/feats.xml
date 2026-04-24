@@ -6,12 +6,99 @@
             <file name="feats.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/feats.xml" />
         </update>
     </info>
-    <element name="name" type="Feat" source="source" id="ID_author_source_FEAT_name">
+    <element name="Wyrmslayer Inheritence" type="Feat" source="The Wyrmslayer" id="ID_PW_WS_FEAT_WYRMSLAYER_INHERITENCE">
+        <prerequisite>4th level</prerequisite>
+        <requirements>[level:4]</requirements>
         <description>
-            <p></p>
+            <p>You gain access to one weapon of your choice from the Dragonslayer’s Arsenal Wyrmslayer class feature, as well as its fusion mechanic.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Dragonslayer's Arsenal" supports="wyrmslayer-weapons" level="4" />
+        </rules>
+    </element>
+    <element name="Specialized Inheritence" type="Feat" source="The Wyrmslayer" id="ID_PW_WS_FEAT_SPECIALIZED_INHERITENCE">
+        <prerequisite>Wyrmslayer Inheritance or Level 8 Wyrmslayer</prerequisite>
+        <requirements>[wyrmslayer:level:8]|ID_PW_WS_FEAT_WYRMSLAYER_INHERITENCE</requirements>
+        <description>
+            <p>Choose one weapon from either the Sky Splitter, Toll Sentinel or Death Singer weapon lists and gain access to it alongside its fusion mechanic.</p>
+        </description>
+        <sheet displaly="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" supports="specialized-inheritance" />
+        </rules>
+    </element>
+    <element name="Sky Splitter Inheritence" type="Feat Feature" source="The Wyrmslayer" id="ID_PW_WS_FEAT_SPECIALIZED_INHERITENCE_SKY_SPLITTER">
+        <description>
+            <p>Choose a weapon from the Sky Splitter weapon list and gain access to it alongside its fusion mechanic.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <select type="Proficiency" name="Weapon Proficiency (Specialized Inheritence)" supports="deadly-arsenal" />
+        </rules>
+    </element>
+    <element name="Toll Sentinel Inheritence" type="Feat Feature" source="The Wyrmslayer" id="ID_PW_WS_FEAT_SPECIALIZED_INHERITENCE_TOLL_SENTINEL">
+        <description>
+            <p>Choose a weapon from the Toll Sentinel weapon list and gain access to it alongside its fusion mechanic.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <select type="Proficiency" name="Weapon Proficiency (Specialized Inheritence)" supports="deadly-arsenal" />
+        </rules>
+    </element>
+    <element name="Death Singer Inheritence" type="Feat Feature" source="The Wyrmslayer" id="ID_PW_WS_FEAT_SPECIALIZED_INHERITENCE_DEATH_SINGER">
+        <description>
+            <p>Choose a weapon from the Death Singer weapon list and gain access to it alongside its fusion mechanic.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>            
+            <select type="Proficiency" name="Weapon Proficiency (Specialized Inheritence)" supports="deadly-arsenal" />
+        </rules>
+    </element>
+    <element name="Trove Master" type="Feat" source="The Wyrmslayer" id="ID_PW_WS_FEAT_TROVE_MASTER">
+        <description>
+            <p>Your treasure driven lust and impeccable eye for quality grants you the following benefits.</p>
+            <ul>
+                <li>You can ascertain the true monetary value of art, gems, relics, statues, currencies, treasures, identified magical artefacts and any piece of artisan gear or equipment.</li>
+                <li>You can determine if the objects are fake, copied or original works.</li>
+                <li>You have advantage on persuasion and deception checks when haggling.</li>
+                <li>You can sell art related objects at 1.5 times their intended value.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your treasure driven lust and impeccable eye for quality grants you the following benefits.
+            You can ascertain the true monetary value of art, gems, relics, statues, currencies, treasures, identified magical artefacts and any piece of artisan gear or equipment.
+            You can determine if the objects are fake, copied or original works.
+            You have advantage on persuasion and deception checks when haggling.
+            You can sell art related objects at 1.5 times their intended value.</description>
+        </sheet>
+    </element>
+    <element name="Big Game Hunter" type="Feat" source="The Wyrmslayer" id="ID_PW_WS_FEAT_BIG_GAME_HUNTER">
+        <description>
+            <p>You can study and hunt anything and anyone with greater finesse than those around you.</p>
+            <ul>
+                <li>Increase your Wisdom or Intelligence score by 1.</li>
+                <li>Choose a creature you’re aware of, have knowledge of or have found tracks/remnants of.</li>
+                <li>All Intelligence checks made to ascertain knowledge of the creature are made with advantage.</li>
+                <li>If the creature is Huge or greater in size, you have advantage on Perception, Survival and Animal Handling checks related to it.</li>
+                <li>You may only track one creature in this way at a time.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Choose a creature you’re aware of, have knowledge of or have found tracks/remnants of. All Intelligence checks made to ascertain knowledge of the creature are made with advantage. If the creature is Huge or greater in size, you have advantage on Perception, Survival and Animal Handling checks related to it. You may only track one creature in this way at a time.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (Big Game Hunter)" supports="ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_INTELLIGENCE" />
+        </rules>
     </element>
 </elements>
