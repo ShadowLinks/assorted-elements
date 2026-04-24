@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/feats.xml" />
+        </update>
+    </info>
+    <element name="name" type="Feat" source="source" id="ID_author_source_FEAT_name">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
