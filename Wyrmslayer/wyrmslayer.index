@@ -2,11 +2,15 @@
 <index>
     <info>
         <update version="0.2.1">
-            <file name="kibblestasty.index" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer.index" />
+            <file name="wyrmslayer.index" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer.index" />
         </update>
     </info>
     <files>
         <file name="source.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/source.xml" />
         <file name="class-wyrmslayer.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/class-wyrmslayer.xml" />
+        <file name="wyrmslayer-deathsinger.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-deathsinger.xml" />
+        <file name="wyrmslayer-skysplitter.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-skysplitter.xml" />
+        <file name="wyrmslayer-tollsentinel.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/wyrmslayer-tollsentinel.xml" />
+        <file name="lineages.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/lineages.xml" />
     </files>
 </index>
