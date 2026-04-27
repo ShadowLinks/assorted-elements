@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="class-wyrmslayer.xml" url="https://github.com/ShadowLinks/assorted-elements/raw/refs/heads/main/Wyrmslayer/class-wyrmslayer.xml" />
         </update>
     </info>
@@ -98,6 +98,13 @@
             <description>Your DC for Wyrmslayer features is {{wyrmslayer:dc}}</description>
         </sheet>
         <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <select type="Proficiency" name="Skill Proficiency, (Wyrmslayer)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INSIGHT" />
             <stat name="wyrmslayer:dc" value="8" bonuys="base"/>
             <stat name="wyrmslayer:dc" value="proficiency" />
             <stat name="wyrmslayer:dc" value="constitution:modifier" />
@@ -121,12 +128,12 @@
     </element>
     <element name="Dragonslayer's Arsenal" type="Class Feature" source="The Wyrmslayer" id="ID_PW_WS_CLASS_FEATURE_WYRMSLAYER_DRAGONSLAYERS_ARSENAL">
         <description>
-            <p>Specialising in a unique methods of hunting dragons, the legendary smith work of the Wyrmslayer Conclave grants you access to a powerful arsenal of dragon hunting weapons. Choose a weapon from the list below and become proficient with it. You gain an additional weapon proficiency level 10. These weapon's do not fall under the simple or martial category and require special Wyrmslayer training to wield, meaning non wyrmslayer characters cannot use them effectively. Wyrmslayer weapons can fuse with and absorb the powers of other magical weapons of their corresponding type, as shown below in the list.</p>
+            <p>Specialising in a unique methods of hunting dragons, the legendary smith work of the Wyrmslayer Conclave grants you access to a powerful arsenal of dragon hunting weapons. Choose a weapon from the list below and become proficient with it. You gain an additional weapon proficiency at level 10. These weapons do not fall under the simple or martial category and require special Wyrmslayer training to wield, meaning non wyrmslayer characters cannot use them effectively. Wyrmslayer weapons can fuse with and absorb the powers of other magical weapons of their corresponding type, as shown below in the list.</p>
             <table>
                 <thead>
                     <tr><td>Weapon</td><td>Damge Die</td><td>Properties</td><td>Abilities</td><td>Possible Infusions</td></tr>
                 </thead>
-                <tr><td>Greatspear</td><td>1d10 piercing</td><td>two handed</td><td>Crit on 19 or 20</td><td>polearms</td></tr>
+                <tr><td>Greatspear</td><td>1d10 piercing</td><td>reach, finesse</td><td>Crit on 19 or 20</td><td>polearms</td></tr>
                 <tr><td>Basilisk Blade</td><td>3d4 slashing</td><td>two handed, siege</td><td>Deals extra d6 vs Huge or larger monsters</td><td>longswords, greatswords</td></tr>
                 <tr><td>Titan Slab</td><td>3d4 bludgeoning</td><td>two handed,finesse, siege</td><td>1d4 on enemies beside target on hit</td><td>Hammers, mauls, warpicks</td></tr>
                 <tr><td>Wyvern Fists</td><td>2d4 bludgeoning</td><td>two handed</td><td>When attacking, can use a bonus attack</td><td>fist weapons</td></tr>
@@ -136,7 +143,7 @@
                 <tr><td>Wyrm Quills</td><td>1d8 piercing</td><td>reach,finesse</td><td>Prevents regaining hit points on hit until end of their next turn</td><td>daggers, darts</td></tr>
             </table>
             <p class="indent">When a Wyrmslayer weapon absorbs another weapon, it gains the magical properties, effects, bonuses and powers of the weapon it merges with, including any curses. Whilst in this form, the Wyrmslayer weapon retains its own abilities and traits, such as light, thrown or finesse. It also retains it's base damage die, unless the absorbed weapon contains a property to increase it. Wyrmslayer weapons can only merge with a weapon that matches their category. For example, a Greatspear cannot absorb the properties of a magical sword or axe and instead, must inherit the powers of a polearm.</p>
-            <p class="indent">A Wyrmslayer weapon can only have one fusion at any given time. You can remove the fusion component and return both weapons to their original form whenever you please. Fusing a weapon requires 10 minutes and removing a weapon takes 1 minute. If the fused weapon requires attunement, you must follow the s tandard attunement rules after fusing to wield the weapon effectively. The weapon's appearance changes to create an amalgamation of its original look and that of its component.</p>
+            <p class="indent">A Wyrmslayer weapon can only have one fusion at any given time. You can remove the fusion component and return both weapons to their original form whenever you please. Fusing a weapon requires 10 minutes and removing a weapon takes 1 minute. If the fused weapon requires attunement, you must follow the standard attunement rules after fusing to wield the weapon effectively. The weapon's appearance changes to create an amalgamation of its original look and that of its component.</p>
         </description>
         <sheet>
             <description>These weapon's do not fall under the simple or martial category and require special Wyrmslayer training to wield, meaning non wyrmslayer characters cannot use them effectively. Wyrmslayer weapons can fuse with and absorb the powers of other magical weapons of their corresponding type.
@@ -466,7 +473,7 @@
         </rules>
      </element>
      <element name="Weapon Proficiency (Greatspear)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSPEAR">
-        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH,, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
+        <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
     </element>
      <element name="Weapon Proficiency (Basilisk Blade)" type="Proficiency" source="The Wyrmslayer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BASILISK_BLADE">
         <supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, wyrmslayer-weapons, ID_INTERNAL_WEAPON_GROUP_WYRMSLAYER_WEAPONS</supports>
